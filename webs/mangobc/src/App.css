@@ -1,0 +1,10 @@
+main {
+    display: flex;
+    flex-direction: column;
+    place-content: center;
+}
+
+.image{
+    width: 100%;
+    max-height: 95vh;
+}
