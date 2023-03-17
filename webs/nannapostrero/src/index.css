@@ -1,3 +1,41 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+    --blue-nanna: #001468;
+    --purple-nanna: #360251;
+    --yellow-nanna: #e2a40a;
+    --brown-nanna: #351a01;
+    --white-nanna: #ffffff;
+}
+
+@font-face {
+    font-family: DEVIUS;
+    src: url(./assets/fonts/Devious/DEVIOUS.ttf);
+}
+
+@font-face {
+    font-family: AppleGaramond;
+    src: url(./assets/fonts/AppleGaramond/AppleGaramond.ttf);
+}
+
+nav,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+button {
+    font-family: DEVIUS;
+}
+
+body {
+    font-family: AppleGaramond;
+    color: var(--blue-nanna);
+}
+
+.alter {
+    font-feature-settings: "aalt" 1;
+}

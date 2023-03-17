@@ -1,0 +1,22 @@
+/* 115px => 7.188 rem  h1 o titulos principales*/
+/* tailwind text-9xl 8rem= 128px*/
+
+
+/* 80px => 5rem h2  titulos de productos*/
+/* talwind text-7xl 4.5rem = 72px */
+
+
+/* 33px => 2.063 descripcion */
+/* tailwind text-3xl 1.875rem=30px */
+
+.grid-productos {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.grid-blog {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.grid-list {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
