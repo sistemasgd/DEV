@@ -1,5 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --blue-mango: #545DF5;
+    --purple-mango: #8953F6;
+    --pink-mango: #FF71AF;
+    --yellow-mango: #FACB22;
+    --black-mango: #1A1A1A;
+    --grey-mango: #E3E3E3;
+    --grey-mango2: #F2F2F2F2;
+}
 
 body {
     margin: 0 auto;
-    background-color: black;
+    background-color: var(--grey-mango);
 }

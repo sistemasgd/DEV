@@ -1,11 +1,12 @@
-import image from './assets/images/proximamente.jpg'
 import './App.css'
-
+import { Header } from './components/Header/Header'
+import { Home } from './components/Home/Home'
 function App () {
   return (
-    <main>
-      <img src={image} className='image' alt='' />
-    </main>
+    <>
+      <Header />
+      <Home />
+    </>
   )
 }
 
