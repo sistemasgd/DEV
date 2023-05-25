@@ -7,7 +7,7 @@ export function Header () {
         <Navbar />
       </header>
 
-      <div className='flex flex-wrap h-[100vh] w-full bg-[#FACB22] overflow-hidde'>
+      <div className='flex flex-wrap h-[87vh] w-full bg-[#FACB22] overflow-hidde'>
         <section
           id='boxes' className='flex items-center'
         >
