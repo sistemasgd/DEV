@@ -34,7 +34,7 @@ export function Industrial () {
             </SwiperSlide>
           </Swiper>
         </div>
-        <div className='flex flex-col justify-center gap-3 p-6 col-span-12 lg:col-span-6 xl:col-span-6 2xl:col-span-6'>
+        <div className='flex flex-col justify-center gap-8 pl-16 col-span-12 lg:col-span-6 xl:col-span-6 2xl:col-span-6'>
           <h1 className='text-3xl font-bold'>
             Transformamos la fórmula
             en producto. Hacemos que
@@ -45,9 +45,11 @@ export function Industrial () {
             clientes, ya sea por módulo o el desarrollo del
             producto de tu elección, vamos de la mano contigo desde la idea hasta que esté listo para la comercialización.
           </p>
-          <a className='text-center uppercase' href='download/mango_labs.pdf' target='_blank'>
-            ver catálogo
-          </a>
+          <div className='flex justify-center'>
+            <a className='btn_pulse text-center uppercase' href='download/mango_labs.pdf' target='_blank'>
+              ver catálogo
+            </a>
+          </div>
         </div>
       </div>
     </section>

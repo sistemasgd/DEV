@@ -11,15 +11,15 @@ export function Institucional () {
         </p>
         <div className='grid grid-cols-12'>
           <div className='flex flex-col flex-wrap gap-3 justify-center items-center col-span-12  md:col-span-4 lg:col-span-4 xl:col-span-4 2xl:col-span-4'>
-            <img className='w-[45%]' src='images/productos/sabormio_inst.webp' alt='empanizador' />
+            <img className='w-[45%] hover:scale-110 transition-all duration-200 ease-out hover:ease-in' src='images/productos/sabormio_inst.webp' alt='empanizador' />
             <img className='w-[75%]' src='images/marcas/base_marcas.webp' alt='base_prod' />
           </div>
           <div className='flex flex-col flex-wrap gap-3 justify-center items-center col-span-12  md:col-span-4 lg:col-span-4 xl:col-span-4 2xl:col-span-4'>
-            <img className='w-[45%]' src='images/productos/sabormio_inst.webp' alt='empanizador' />
+            <img className='w-[45%] hover:scale-110 transition-all duration-200 ease-out hover:ease-in' src='images/productos/sabormio_inst.webp' alt='empanizador' />
             <img className='w-[75%]' src='images/marcas/base_marcas.webp' alt='base_prod' />
           </div>
           <div className='flex flex-col flex-wrap gap-3 justify-center items-center col-span-12  md:col-span-4 lg:col-span-4 xl:col-span-4 2xl:col-span-4'>
-            <img className='w-[45%]' src='images/productos/sabormio_inst.webp' alt='empanizador' />
+            <img className='w-[45%] hover:scale-110 transition-all duration-200 ease-out hover:ease-in' src='images/productos/sabormio_inst.webp' alt='empanizador' />
             <img className='w-[75%]' src='images/marcas/base_marcas.webp' alt='base_prod' />
           </div>
         </div>
@@ -30,9 +30,11 @@ export function Institucional () {
           Tenemos la mejor calidad de insumos e ingredientes para tu negocio. Pregunra por los precios especiales que tenemos para el sector food service, déjanos tus datos si necesitas más información
           o estás interesados en trabajar con nosotros.
         </p>
-        <a className='text-center uppercase' href='#'>
-          ver catálogo
-        </a>
+        <div className='flex justify-center'>
+          <a className='btn_pulse text-center uppercase' href='#'>
+            ver catálogo
+          </a>
+        </div>
       </div>
     </section>
   )

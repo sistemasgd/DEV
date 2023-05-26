@@ -62,7 +62,7 @@ export function Marcas () {
     <section id='marcas' className='container mx-auto p-10 w-[80%]'>
 
       <div className='grid grid-cols-12 my-10'>
-        <div className='flex flex-col gap-3 px-8 justify-center col-span-12  md:col-span-7 lg:col-span-7 xl:col-span-7 2xl:col-span-7'>
+        <div className='flex flex-col gap-10 px-8 justify-center col-span-12  md:col-span-7 lg:col-span-7 xl:col-span-7 2xl:col-span-7'>
           <h2 className='text-3xl font-bold'>
             Haz negocio con
             nosotros y
@@ -74,9 +74,11 @@ export function Marcas () {
             incrementar los productos en tu red
             de distribución. Tenemos una variedad de productos para la venta al detalle.
           </p>
-          <a className='text-center uppercase' href='download/mango_cliente.pdf' target='_blank'>
-            ver catálogo
-          </a>
+          <div className='flex justify-center'>
+            <a className='btn_pulse text-center uppercase' href='download/mango_cliente.pdf' target='_blank'>
+              ver catálogo
+            </a>
+          </div>
         </div>
         <div className='col-span-12  md:col-span-5 lg:col-span-5 xl:col-span-5 2xl:col-span-5'>
           <div>
@@ -130,7 +132,7 @@ export function Marcas () {
           <img className='w-[22%] rotate-[-16deg]' src='images/productos/delibarra.webp' alt='delibarra' />
           <img className='w-[65%]' src='images/marcas/base_marcas.webp' alt='base_prod' />
         </div>
-        <div className='flex flex-col gap-3 px-8 justify-center col-span-12  md:col-span-7 lg:col-span-7 xl:col-span-7 2xl:col-span-7'>
+        <div className='flex flex-col gap-8 px-8 justify-center col-span-12  md:col-span-7 lg:col-span-7 xl:col-span-7 2xl:col-span-7'>
           <h2 className='text-3xl font-bold'>
             Haz negocio con
             nosotros y
@@ -142,14 +144,14 @@ export function Marcas () {
             incrementar los productos en tu red
             de distribución. Tenemos una variedad de productos para la venta al detalle.
           </p>
-          <a href='#'>
-            ver catálogo
+          <a className='btn_pulse text-center uppercase' href='#'>
+            conoce mas
           </a>
         </div>
       </div>
 
       <div className='grid grid-cols-12 mt-36'>
-        <div className='flex flex-col gap-3 px-8 justify-center col-span-12  md:col-span-7 lg:col-span-7 xl:col-span-7 2xl:col-span-7'>
+        <div className='flex flex-col gap-8 px-8 justify-center col-span-12  md:col-span-7 lg:col-span-7 xl:col-span-7 2xl:col-span-7'>
           <h2 className='text-3xl font-bold'>
             Haz negocio con
             nosotros y
@@ -161,8 +163,8 @@ export function Marcas () {
             incrementar los productos en tu red
             de distribución. Tenemos una variedad de productos para la venta al detalle.
           </p>
-          <a href='#'>
-            ver catálogo
+          <a className='btn_pulse text-center uppercase' href='#'>
+            conoce mas
           </a>
         </div>
         <div className='flex flex-col flex-wrap gap-3 justify-center items-center col-span-12  md:col-span-5 lg:col-span-5 xl:col-span-5 2xl:col-span-5'>
@@ -176,7 +178,7 @@ export function Marcas () {
           <img className='w-[35%] rotate-[-16deg]' src='images/productos/sabormio.webp' alt='empanizador' />
           <img className='w-[65%]' src='images/marcas/base_marcas.webp' alt='base_prod' />
         </div>
-        <div className='flex flex-col gap-3 px-8 justify-center col-span-12  md:col-span-7 lg:col-span-7 xl:col-span-7 2xl:col-span-7'>
+        <div className='flex flex-col gap-8 px-8 justify-center col-span-12  md:col-span-7 lg:col-span-7 xl:col-span-7 2xl:col-span-7'>
           <h2 className='text-3xl font-bold'>
             Haz negocio con
             nosotros y
@@ -188,8 +190,8 @@ export function Marcas () {
             incrementar los productos en tu red
             de distribución. Tenemos una variedad de productos para la venta al detalle.
           </p>
-          <a href='#'>
-            ver catálogo
+          <a className='btn_pulse text-center uppercase' href='#'>
+            conoce mas
           </a>
         </div>
       </div>

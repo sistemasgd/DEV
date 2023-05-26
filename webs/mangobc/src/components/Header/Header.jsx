@@ -15,7 +15,7 @@ export function Header () {
             <img src='images/caja_izq.webp' alt='caja_izq' />
           </div>
           <div>
-            <img className='relative w-[50%] mx-auto bottom-[-4rem]' src='images/logo_mango.webp' alt='logo' />
+            <img className='relative w-[70%] mx-auto bottom-[-4rem]' src='images/logo_mango.webp' alt='logo' />
             <img className='relative bottom-[-6rem]' src='images/base.webp' alt='base' />
           </div>
           <div>
