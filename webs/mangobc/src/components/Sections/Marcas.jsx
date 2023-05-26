@@ -3,7 +3,6 @@ import { Swiper, SwiperSlide } from 'swiper/react'
 import { Autoplay, Pagination, Navigation } from 'swiper'
 // Import Swiper styles
 import 'swiper/css'
-import './Marcas.css'
 
 export function Marcas () {
   const marcas = [
@@ -51,7 +50,7 @@ export function Marcas () {
       >
         <img
           src={primaryImg}
-          className='max-w-[150px] '
+          className='max-w-[150px]'
           alt={alt}
           ref={imageRef}
         />
@@ -60,7 +59,7 @@ export function Marcas () {
   }
 
   return (
-    <section id='marcas'>
+    <section id='marcas' className='container mx-auto p-10 w-[80%]'>
 
       <div className='grid grid-cols-12 my-10'>
         <div className='flex flex-col gap-3 px-8 justify-center col-span-12  md:col-span-7 lg:col-span-7 xl:col-span-7 2xl:col-span-7'>
@@ -75,15 +74,11 @@ export function Marcas () {
             incrementar los productos en tu red
             de distribución. Tenemos una variedad de productos para la venta al detalle.
           </p>
-          <a className='uppercase' href='#'>
+          <a className='text-center uppercase' href='download/mango_cliente.pdf' target='_blank'>
             ver catálogo
           </a>
         </div>
-
-        {/* <div className='flex flex-col flex-wrap gap-3 justify-center items-center col-span-12  md:col-span-5 lg:col-span-5 xl:col-span-5 2xl:col-span-5'> */}
         <div className='col-span-12  md:col-span-5 lg:col-span-5 xl:col-span-5 2xl:col-span-5'>
-
-          {/* <img className='w-[22%]' src='images/productos/delibarra.webp' alt='delibarra' /> */}
           <div>
             <Swiper
               spaceBetween={10}
@@ -103,10 +98,10 @@ export function Marcas () {
                 <img className='w-[20%] m-auto' src='images/productos/delibarra.webp' alt='delibarra' />
               </SwiperSlide>
               <SwiperSlide>
-                <img className='w-[35%] m-auto' src='images/productos/sabormio.webp' alt='delibarra' />
+                <img className='w-[35%] m-auto' src='images/productos/sabormio.webp' alt='empanizador' />
               </SwiperSlide>
               <SwiperSlide>
-                <img className='w-[43%] m-auto' src='images/productos/besonuez.webp' alt='delibarra' />
+                <img className='w-[43%] m-auto' src='images/productos/besonuez.webp' alt='besodenuez' />
               </SwiperSlide>
             </Swiper>
           </div>
@@ -132,7 +127,7 @@ export function Marcas () {
 
       <div className='grid grid-cols-12 mt-36'>
         <div className='flex flex-col flex-wrap gap-3 justify-center items-center col-span-12  md:col-span-5 lg:col-span-5 xl:col-span-5 2xl:col-span-5'>
-          <img className='w-[22%]' src='images/productos/delibarra.webp' alt='delibarra' />
+          <img className='w-[22%] rotate-[-16deg]' src='images/productos/delibarra.webp' alt='delibarra' />
           <img className='w-[65%]' src='images/marcas/base_marcas.webp' alt='base_prod' />
         </div>
         <div className='flex flex-col gap-3 px-8 justify-center col-span-12  md:col-span-7 lg:col-span-7 xl:col-span-7 2xl:col-span-7'>
@@ -171,14 +166,14 @@ export function Marcas () {
           </a>
         </div>
         <div className='flex flex-col flex-wrap gap-3 justify-center items-center col-span-12  md:col-span-5 lg:col-span-5 xl:col-span-5 2xl:col-span-5'>
-          <img className='w-[35%] rotate-[16deg] animate-bounce animate-infinite animate-duration-[5500ms]' src='images/productos/besonuez.webp' alt='besonuez' />
+          <img className='w-[35%] rotate-[16deg]' src='images/productos/besonuez.webp' alt='besonuez' />
           <img className='w-[65%]' src='images/marcas/base_marcas.webp' alt='base_prod' />
         </div>
       </div>
 
       <div className='grid grid-cols-12 mt-36'>
         <div className='flex flex-col flex-wrap gap-3 justify-center items-center col-span-12  md:col-span-5 lg:col-span-5 xl:col-span-5 2xl:col-span-5'>
-          <img className='w-[35%] rotate-[-16deg] animate-bounce animate-infinite animate-duration-[5500ms]' src='images/productos/sabormio.webp' alt='empanizador' />
+          <img className='w-[35%] rotate-[-16deg]' src='images/productos/sabormio.webp' alt='empanizador' />
           <img className='w-[65%]' src='images/marcas/base_marcas.webp' alt='base_prod' />
         </div>
         <div className='flex flex-col gap-3 px-8 justify-center col-span-12  md:col-span-7 lg:col-span-7 xl:col-span-7 2xl:col-span-7'>
