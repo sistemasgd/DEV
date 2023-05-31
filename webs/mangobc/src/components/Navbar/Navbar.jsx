@@ -1,11 +1,6 @@
 export function Navbar () {
   const menu = [
     {
-      id: 0,
-      title: 'home',
-      url: 'url'
-    },
-    {
       id: 1,
       title: 'distribución',
       url: 'url'
@@ -38,15 +33,15 @@ export function Navbar () {
   ]
 
   return (
-    <nav className='container mx-auto flex flex-wrap p-5 flex-col items-center'>
-      <ul className='flex flex-wrap items-center text-base justify-center'>
+    <nav className='fixed flex justify-center z-[999] w-full bg-[#FACB22] text-xs h-12'>
+      <ul className='flex items-center justify-center gap-8'>
         {
             menu.map((item) => (
               <li
                 key={item.id}
-                className='bg-[#FACB22] border rounded-[10px] h-[30px] text-center hover:bg-black hover:text-white'
+                className='flex justify-center items-center bg-[#FACB22] rounded-[100px] p-4 h-[30px] hover:bg-black hover:text-white'
               >
-                <a href='#' className='uppercase font-bold'>
+                <a href='#' className='uppercase font-bold text-center'>
                   {item.title}
                 </a>
               </li>

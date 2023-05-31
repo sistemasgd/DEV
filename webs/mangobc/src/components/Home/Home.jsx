@@ -1,6 +1,7 @@
 import { Marcas } from '../Sections/Marcas'
 import { Industrial } from '../Sections/Industrial'
 import { Institucional } from '../Sections/Institucional'
+import { Contacto } from '../Sections/Contacto'
 import './Home.css'
 export function Home () {
   return (
@@ -24,6 +25,7 @@ export function Home () {
         </div>
       </div>
       <Institucional />
+      <Contacto />
     </main>
   )
 }

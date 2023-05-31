@@ -4,10 +4,13 @@ export function Header () {
   return (
     <>
       <header>
+        <div className='fixed bg-black text-white z-[1000] w-[150px] rounded-b-[10px] p-4 left-28'>
+          <img className='' src='images/logo_mango.webp' alt='logo' />
+        </div>
         <Navbar />
       </header>
 
-      <div className='flex flex-wrap h-[87vh] w-full bg-[#FACB22] overflow-hidde'>
+      <div className='flex flex-wrap h-[87vh] w-full bg-[#FACB22] overflow-hidden'>
         <section
           id='boxes' className='flex items-center'
         >
