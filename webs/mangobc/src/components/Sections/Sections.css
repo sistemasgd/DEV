@@ -1,0 +1,13 @@
+.swiper-pagination-bullet-active {
+    background-color: #FACB22 !important;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    color: #FACB22 !important;
+}
+
+.marcas-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}

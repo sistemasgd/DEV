@@ -2,7 +2,10 @@ import { Swiper, SwiperSlide } from 'swiper/react'
 import { Autoplay, Pagination, Navigation } from 'swiper'
 // Import Swiper styles
 import 'swiper/css'
-import './sections.css'
+import 'swiper/css/navigation'
+import 'swiper/css/pagination'
+import 'swiper/css/scrollbar'
+import './Sections.css'
 
 export function Industrial () {
   return (
@@ -24,13 +27,16 @@ export function Industrial () {
             className=''
           >
             <SwiperSlide>
-              <img className='m-auto' src='images/industrial/fabrica.webp' alt='fabrica' />
+              <img className='m-auto' src='images/industrial/slider1.webp' alt='slider1' />
             </SwiperSlide>
             <SwiperSlide>
-              <img className='m-auto' src='images/industrial/fabrica.webp' alt='fabrica' />
+              <img className='m-auto' src='images/industrial/slider2.webp' alt='slider2' />
             </SwiperSlide>
             <SwiperSlide>
-              <img className='m-auto' src='images/industrial/fabrica.webp' alt='fabrica' />
+              <img className='m-auto' src='images/industrial/slider3.webp' alt='slider3' />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img className='m-auto' src='images/industrial/slider4.webp' alt='slider4' />
             </SwiperSlide>
           </Swiper>
         </div>

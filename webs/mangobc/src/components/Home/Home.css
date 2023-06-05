@@ -1,6 +1,6 @@
 .parallax {
     /* The image used */
-    background-image: url("images/industrial/parallax.webp");
+    background-image: url("../images/industrial/parallax.webp");
 
     /* Set a specific height */
     min-height: 350px;
@@ -15,7 +15,7 @@
 
 .parallax2 {
     /* The image used */
-    background-image: url("images/institucional/parallax.webp");
+    background-image: url("../images/industrial/parallax2.webp");
 
     /* Set a specific height */
     min-height: 350px;
@@ -27,6 +27,10 @@
     background-size: cover;
 }
 
+.texto_borde {
+    -webkit-text-stroke: 1px black;
+}
+
 
 .btn_pulse {
     width: 40%;
@@ -35,7 +39,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #facb22;
+    background-color: #FACB22 !important;
     font-weight: bold;
     box-shadow: 0 0 0 0 #FACB22;
     transform: scale(1);
