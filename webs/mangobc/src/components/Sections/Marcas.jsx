@@ -62,7 +62,7 @@ export function Marcas () {
   return (
     <section id='marcas' className='container mx-auto p-10 w-[80%]'>
 
-      <div className='grid grid-cols-4 my-10'>
+      <div className='grid grid-cols-12 my-10'>
         <div className='flex flex-col gap-10 px-8 justify-center col-span-12  md:col-span-7 lg:col-span-7 xl:col-span-7 2xl:col-span-7'>
           <h2 className='text-3xl font-bold'>
             Haz negocio con
