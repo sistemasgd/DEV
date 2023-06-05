@@ -47,7 +47,7 @@ export function Marcas () {
         onMouseOut={() => {
           imageRef.current.src = primaryImg
         }}
-        className='flex flex-col justify-center bg-white w-48 h-48 rounded-full items-center hover:bg-[#FACB22] transition-all duration-200 ease-out hover:ease-in'
+        className='flex flex-col m-auto justify-center bg-white w-48 h-48 rounded-full items-center hover:bg-[#FACB22] transition-all duration-200 ease-out hover:ease-in'
       >
         <img
           src={primaryImg}
