@@ -9,6 +9,10 @@ export function Institucional () {
           Nuestra línea institucional cuenta con sistemas de cobertura para mejor eficiencia en el sector food
           service mejorando los rendimientos y haciendo más rentable tu negocio.
         </p>
+        <p className='text-lg text-justify tracking-tight'>
+          Nuestra línea institucional cuenta con sistemas de cobertura para mejor eficiencia en el sector food
+          service mejorando los rendimientos y haciendo más rentable tu negocio.
+        </p>
         <div className='grid grid-cols-12'>
           <div className='flex flex-col flex-wrap gap-3 justify-center items-center col-span-12  md:col-span-4 lg:col-span-4 xl:col-span-4 2xl:col-span-4'>
             <img className='w-[45%] hover:scale-110 transition-all duration-200 ease-out hover:ease-in' src='images/productos/sabormio_inst.webp' alt='empanizador' />

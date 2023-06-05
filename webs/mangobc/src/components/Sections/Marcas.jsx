@@ -1,6 +1,6 @@
 import { useRef } from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react'
-import { Autoplay, Pagination, Navigation } from 'swiper'
+import { Autoplay } from 'swiper'
 // Import Swiper styles
 import 'swiper/css'
 import './Sections.css'
@@ -91,10 +91,9 @@ export function Marcas () {
                 disableOnInteraction: false
               }}
               pagination={{
-                clickable: true
+                clickable: false
               }}
-              navigation
-              modules={[Autoplay, Pagination, Navigation]}
+              modules={[Autoplay]}
               className='mySwiper'
             >
               <SwiperSlide>
@@ -147,7 +146,7 @@ export function Marcas () {
             <li className='mb-6'><span className='bg-[#545DF5] font-bold rounded-xl p-1'>-3 productos con 10 sabores disponibles.</span></li>
           </ul>
           <div className='flex justify-start'>
-            <a className='btn_pulse text-center uppercase' href='#'>
+            <a className='btn_pulse text-center uppercase' href='https://www.delibarras.com/' target='_blank' rel='noreferrer'>
               conoce más
             </a>
           </div>
@@ -168,7 +167,7 @@ export function Marcas () {
             <li className='mb-6'><span className='bg-[#FF71AF] font-bold rounded-xl p-1'>-Más de 4 productos listos para distribuir.</span></li>
           </ul>
           <div className='flex justify-end'>
-            <a className='btn_pulse text-center uppercase' href='#'>
+            <a className='btn_pulse text-center uppercase' href='https://nannapostrero.com.mx/' target='_blank' rel='noreferrer'>
               conoce más
             </a>
           </div>

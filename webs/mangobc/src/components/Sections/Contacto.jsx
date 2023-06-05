@@ -102,6 +102,8 @@ export function Contacto () {
           >
             <option>Maquila</option>
             <option>Marcas Blancas</option>
+            <option>Distribución de productos</option>
+            <option>Línea institucional</option>
           </select>
           <div className='absolute bottom-0 top-8 right-0 flex items-center px-2 pointer-events-none'>
             <svg className='w-4 h-4 fill-current' viewBox='0 0 20 20'>
