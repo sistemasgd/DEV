@@ -196,7 +196,7 @@ export function Marcas () {
             <li className='mb-6'><span className='bg-[#8953F6] font-bold rounded-xl p-1'>-Más de 10 sabores de empanizador.</span></li>
           </ul>
           <div className='flex justify-start'>
-            <a className='btn_pulse text-center uppercase' href='#'>
+            <a className='btn_pulse text-center uppercase' href='https://www.sabormio.mx/' target='_blank' rel='noreferrer'>
               conoce más
             </a>
           </div>

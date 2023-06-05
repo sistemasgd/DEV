@@ -5,10 +5,6 @@ export function Institucional () {
         <h1 className='text-4xl font-bold text-center'>
           Conoce nuestra Línea Institucional
         </h1>
-        <p className='text-lg text-justify'>
-          Nuestra línea institucional cuenta con sistemas de cobertura para mejor eficiencia en el sector food
-          service mejorando los rendimientos y haciendo más rentable tu negocio.
-        </p>
         <p className='text-lg text-justify tracking-tight'>
           Nuestra línea institucional cuenta con sistemas de cobertura para mejor eficiencia en el sector food
           service mejorando los rendimientos y haciendo más rentable tu negocio.
@@ -31,7 +27,7 @@ export function Institucional () {
           Sabor Mío Institucional
         </h2>
         <p className='text-lg text-justify'>
-          Tenemos la mejor calidad de insumos e ingredientes para tu negocio. Pregunra por los precios especiales que tenemos para el sector food service, déjanos tus datos si necesitas más información
+          Tenemos la mejor calidad de insumos e ingredientes para tu negocio. Pregunta por los precios especiales que tenemos para el sector food service, déjanos tus datos si necesitas más información
           o estás interesados en trabajar con nosotros.
         </p>
         <div className='flex justify-center'>
