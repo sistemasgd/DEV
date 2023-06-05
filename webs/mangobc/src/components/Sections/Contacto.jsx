@@ -74,7 +74,7 @@ export function Contacto () {
             htmlFor='phone'
             className='block font-bold mb-2'
           >
-            Telefono:
+            Teléfono:
           </label>
           <input
             type='text'

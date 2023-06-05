@@ -1,11 +1,11 @@
 import { Link } from 'react-router-dom'
 export function Navbar () {
   const menu = [
-    {
-      id: 0,
-      title: 'Inicio',
-      url: '/'
-    },
+    // {
+    //   id: 0,
+    //   title: 'Inicio',
+    //   url: '/'
+    // },
     {
       id: 1,
       title: 'distribución',
