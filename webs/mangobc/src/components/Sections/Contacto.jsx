@@ -1,13 +1,17 @@
 import React, { useState } from 'react'
+import emailjs from '@emailjs/browser'
+import Swal from 'sweetalert2'
 
 export function Contacto () {
-  const [formData, setFormData] = useState({
+  const initialState = {
     name: '',
     email: '',
     phone: '',
     service: '',
     message: ''
-  })
+  }
+
+  const [formData, setFormData] = useState(initialState)
 
   const handleChange = event => {
     setFormData({
@@ -18,7 +22,28 @@ export function Contacto () {
 
   const handleSubmit = event => {
     event.preventDefault()
-    // Handle submission logic here
+
+    const form = {
+      name: event.target.name.value,
+      email: event.target.email.value,
+      phone: event.target.phone.value,
+      service: event.target.service.value,
+      message: event.target.message.value
+    }
+
+    emailjs.send('service_63f1jdq', 'template_1zoan8q', form, 'tkeAiBV32-UPKy8-Y')
+      .then((result) => {
+        console.log(result.text)
+        Swal.fire({
+          title: 'Exito!',
+          text: 'Correo enviado',
+          icon: 'success',
+          confirmButtonText: 'ok'
+        })
+        setFormData(initialState)
+      }, (error) => {
+        console.log(error.text)
+      })
   }
 
   return (
@@ -80,7 +105,7 @@ export function Contacto () {
             type='text'
             id='phone'
             name='phone'
-            value={formData.name}
+            value={formData.phone}
             onChange={handleChange}
             className='shadow appearance-none border rounded w-full py-2 px-3 leading-tight focus:outline-[#FACB22] focus:shadow-outline'
           />
@@ -128,13 +153,13 @@ export function Contacto () {
             className='shadow appearance-none border rounded w-full py-2 px-3 leading-tight focus:outline-[#FACB22]  focus:shadow-outline'
           />
         </div>
-
+        <div className='col-span-6'>
+          <button type='submit' className='btn_pulse text-center w-full uppercase'>
+            enviar
+          </button>
+        </div>
       </form>
-      <div className='flex justify-center'>
-        <button type='submit' className='btn_pulse text-center w-1/5 uppercase'>
-          enviar
-        </button>
-      </div>
+
     </section>
   )
 }
