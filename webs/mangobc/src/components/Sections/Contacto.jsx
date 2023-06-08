@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import emailjs from '@emailjs/browser'
 import Swal from 'sweetalert2'
+import { KEY } from '../../services/email.js'
 
 export function Contacto () {
   const initialState = {
@@ -31,7 +32,7 @@ export function Contacto () {
       message: event.target.message.value
     }
 
-    emailjs.send('service_63f1jdq', 'template_1zoan8q', form, 'tkeAiBV32-UPKy8-Y')
+    emailjs.send(KEY.SERVICE_ID, KEY.TEMPLATE_ID, form, KEY.USER_ID)
       .then((result) => {
         console.log(result.text)
         Swal.fire({
