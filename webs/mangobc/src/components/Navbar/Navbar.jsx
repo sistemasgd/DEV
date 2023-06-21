@@ -35,6 +35,11 @@ export function Navbar () {
       id: 6,
       title: 'contacto',
       url: '/construction'
+    },
+    {
+      id: 7,
+      title: 'Vacantes',
+      url: '/jobs'
     }
   ]
 
