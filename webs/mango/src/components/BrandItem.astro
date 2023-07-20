@@ -1,0 +1,61 @@
+---
+import Title from './Title.astro';
+import PulseButton from './PulseButton.astro';
+import ProductBase from './ProductBase.astro';
+
+export interface Props {
+    title: string;
+    body: string;
+    list: Array<string>;
+    align_list?: string;
+    listbg: string;
+    align_button: string;
+    grid_order?: string;
+    product_img: string;
+    href: string;
+    product_class: string;
+    alt: string;
+    base_class: string;
+}
+
+const {
+    title,
+    body,
+    list,
+    align_list,
+    listbg,
+    align_button,
+    grid_order,
+    product_img,
+    href,
+    product_class,
+    alt,
+    base_class,
+} = Astro.props;
+---
+
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-10">
+    <div class={`flex flex-col gap-8 px-8 justify-center ${align_list}`}>
+        <Title body={title} />
+        <p class="text-lg">{body}</p>
+        <ul>
+            {
+                list.map((item) => (
+                    <li class="mb-6">
+                        <span class={`bg-${listbg} font-bold rounded-xl p-1`}>-{item}</span>
+                    </li>
+                ))
+            }
+        </ul>
+        <div class={`flex ${align_button}`}>
+            <PulseButton href={href} width="md:w-3/4 xl:w-2/5" body="conoce más" />
+        </div>
+    </div>
+    <ProductBase
+        src={product_img}
+        alt={alt}
+        product_class={product_class}
+        grid_order={grid_order}
+        base_class={base_class}
+    />
+</div>

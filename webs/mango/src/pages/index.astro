@@ -1,12 +1,18 @@
 ---
-import Layout from '../layouts/Layout.astro'
+import Layout from '../layouts/Layout.astro';
 import HeaderSection from '../components/HeaderSection.astro';
-import BrandSection from '../components/BrandSection.astro';
+import BrandSection from '../components/sections/BrandSection.astro';
+import InstitutionalSection from '../components/sections/InstitutionalSection.astro';
+import IndustrialSection from '../components/sections/IndustrialSection.astro';
+import ContactSection from '../components/sections/ContactSection.astro';
 ---
 
 <Layout title="Home | MangoBC">
 	<main>
-		<HeaderSection/>
-		<BrandSection/>
+		<HeaderSection />
+		<BrandSection />
+		<IndustrialSection />
+		<InstitutionalSection />
+		<ContactSection />
 	</main>
 </Layout>

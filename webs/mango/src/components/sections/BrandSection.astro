@@ -1,0 +1,133 @@
+---
+import Container from '../Container.astro';
+import Title from '../Title.astro';
+import Divider from '../Divider.astro';
+import PulseButton from '../PulseButton.astro';
+import BrandItem from '../BrandItem.astro';
+import Paragraph from '../Paragraph.astro';
+import { brands } from '../../data/brands';
+import ProductBase from '../ProductBase.astro';
+const marcas = [
+    {
+        id: 0,
+        title: 'delibarras',
+        href: 'delibarras',
+        img: 'images/marcas/logo_deli.webp',
+        img2: 'images/marcas/menu_deli.webp',
+        descripcion: 'logo_deli',
+    },
+    {
+        id: 1,
+        title: 'nanná postrero',
+        href: 'nanna',
+        img: 'images/marcas/logo_nanna.webp',
+        img2: 'images/marcas/menu_nanna.webp',
+        descripcion: 'logo_nanna',
+    },
+    {
+        id: 2,
+        title: 'sabor mío',
+        href: 'sabormio',
+        img: 'images/marcas/logo_sabormio.webp',
+        img2: 'images/marcas/menu_sabormio.webp',
+        descripcion: 'logo_sabormio',
+    },
+    {
+        id: 3,
+        title: 'began',
+        href: 'began',
+        img: 'images/marcas/logo_began.webp',
+        img2: 'images/marcas/menu_began.webp',
+        descripcion: 'logo_began',
+    },
+];
+---
+
+<Container>
+    <!-- Section AboutUs -->
+    <div class="grid grid-cols-1 gap-6 md:grid-cols-2 mt-10">
+        <div class="flex flex-col gap-8 px-8 justify-center">
+            <Title body="Haz negocio con nosotros y distribuye productos Mango." />
+            <Paragraph
+                body="Estás buscando iniciar un negocio o incrementar los productos en tu red de distribución. Tenemos una variedad de productos para la venta al detalle."
+            />
+            <div class="flex justify-center">
+                <PulseButton
+                    href="download/mango_cliente.pdf"
+                    width="md:w-1/3"
+                    body="ver catalogo"
+                />
+            </div>
+        </div>
+        <div>
+            <ProductBase
+                src="images/productos/delibarra.webp"
+                alt="delibarra"
+                product_class="aspect-[359/1100] object-cover max-w-[100px] mx-auto"
+                base_class="aspect-[1496/327] object-cover max-w-[250px] mx-auto"
+            />
+        </div>
+    </div>
+
+    <!-- Section BrandIconsCircle -->
+    <div class="mt-10">
+        <Title styles="text-center uppercase mt-10" body="nuestras marcas" />
+        <div class="grid grid-cols-1 md:grid-cols-4 justify-center gap-3 items-center mt-10">
+            {
+                marcas.map((marca) => (
+                    <div class="flex flex-col">
+                        <figure
+                            id={`btn-${marca.href}`}
+                            class="border flex flex-col m-auto justify-center bg-white w-32 h-32  rounded-full items-center hover:bg-primary shadow-primary transition-all duration-200 ease-out hover:ease-in"
+                        >
+                            <img src={marca.img} class="max-w-[100px]" alt={marca.title} />
+                        </figure>
+                        <p class="hidden xl:block text-lg font-bold text-center uppercase mt-4">
+                            {marca.title}
+                        </p>
+                    </div>
+                ))
+            }
+        </div>
+    </div>
+    <Divider />
+
+    {
+        brands.map(
+            ({
+                title,
+                body,
+                list,
+                align_list,
+                listbg,
+                align_button,
+                grid_order,
+                product_img,
+                href,
+                product_class,
+                alt,
+                base_class,
+            }) => {
+                return (
+                    <>
+                        <BrandItem
+                            title={title}
+                            body={body}
+                            list={list}
+                            align_list={align_list}
+                            listbg={listbg}
+                            align_button={align_button}
+                            grid_order={grid_order}
+                            product_img={product_img}
+                            href={href}
+                            product_class={product_class}
+                            alt={alt}
+                            base_class={base_class}
+                        />
+                        <Divider />
+                    </>
+                );
+            }
+        )
+    }
+</Container>
