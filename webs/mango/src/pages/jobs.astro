@@ -1,0 +1,20 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Container from "../components/Container.astro";
+import JobCard from "../components/JobCard.astro";
+import { jobs } from "../data/jobs";
+---
+
+<Layout title="Jobs | MangoBC">
+  <Container>
+    <div class="relative grid lg:grid-cols-3 md:grid-cols-2 gap-[30px] top-32">
+      {
+        jobs.map(({ id, position, depto, desc }) => {
+          return (
+              <JobCard id={id} position={position} depto={depto} desc={desc} />
+          );
+        })
+      }
+    </div>
+  </Container>
+</Layout>
