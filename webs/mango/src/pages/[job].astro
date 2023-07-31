@@ -1,0 +1,285 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Container from "../components/Container.astro";
+import { jobs } from "../data/jobs";
+export async function getStaticPaths() {
+  const paths = jobs.map((item) => ({
+    params: { job: item.id },
+  }));
+
+  return paths;
+}
+
+const { job } = Astro.params;
+const info = jobs.find((b) => b.id === job);
+
+if (!info) {
+  return Astro.redirect("/404");
+}
+---
+
+<Layout title={`Jobs | ${info.id}`}>
+  <Container>
+    <div class="relative grid md:grid-cols-12 grid-cols-1 gap-[30px] top-32">
+      <div class="lg:col-span-4 md:col-span-6">
+        <div
+          class="shadow dark:shadow-gray-700 rounded-md bg-white dark:bg-slate-900 sticky top-20"
+        >
+          <div class="p-6">
+            <h5 class="text-lg font-semibold">Información de la vacante</h5>
+          </div>
+          <div class="p-6 border-t border-slate-100 dark:border-t-gray-700">
+            <ul class="list-none">
+              <li class="flex items-center">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="feather feather-user-check h-5 w-5"
+                  ><path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"
+                  ></path><circle cx="8.5" cy="7" r="4"></circle><polyline
+                    points="17 11 19 13 23 9"></polyline>
+                </svg>
+
+                <div class="ms-4">
+                  <p class="font-medium">Employee Type:</p>
+                  <span class="text-primary font-medium text-sm">Full Time</span
+                  >
+                </div>
+              </li>
+
+              <li class="flex items-center mt-3">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="feather feather-map-pin h-5 w-5"
+                  ><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"
+                  ></path><circle cx="12" cy="10" r="3"></circle>
+                </svg>
+
+                <div class="ms-4">
+                  <p class="font-medium">Location:</p>
+                  <span class="text-primary font-medium text-sm"
+                    >Beijing, China</span
+                  >
+                </div>
+              </li>
+
+              <li class="flex items-center mt-3">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="feather feather-monitor h-5 w-5"
+                  ><rect x="2" y="3" width="20" height="14" rx="2" ry="2"
+                  ></rect><line x1="8" y1="21" x2="16" y2="21"></line><line
+                    x1="12"
+                    y1="17"
+                    x2="12"
+                    y2="21"></line>
+                </svg>
+
+                <div class="ms-4">
+                  <p class="font-medium">Job Type:</p>
+                  <span class="text-primary font-medium text-sm"
+                    >Back-end Developer</span
+                  >
+                </div>
+              </li>
+
+              <li class="flex items-center mt-3">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="feather feather-briefcase h-5 w-5"
+                  ><rect x="2" y="7" width="20" height="14" rx="2" ry="2"
+                  ></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"
+                  ></path>
+                </svg>
+
+                <div class="ms-4">
+                  <p class="font-medium">Experience:</p>
+                  <span class="text-primary font-medium text-sm">2+ years</span>
+                </div>
+              </li>
+
+              <li class="flex items-center mt-3">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="feather feather-book h-5 w-5"
+                  ><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path
+                    d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"
+                  ></path>
+                </svg>
+
+                <div class="ms-4">
+                  <p class="font-medium">Qualifications:</p>
+                  <span class="text-primary font-medium text-sm">MCA</span>
+                </div>
+              </li>
+
+              <li class="flex items-center mt-3">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="feather feather-dollar-sign h-5 w-5"
+                  ><line x1="12" y1="1" x2="12" y2="23"></line><path
+                    d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"
+                  ></path>
+                </svg>
+
+                <div class="ms-4">
+                  <p class="font-medium">Salary:</p>
+                  <span class="text-primary font-medium text-sm"
+                    >$4000 - $4500</span
+                  >
+                </div>
+              </li>
+
+              <li class="flex items-center mt-3">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="feather feather-clock h-5 w-5"
+                  ><circle cx="12" cy="12" r="10"></circle><polyline
+                    points="12 6 12 12 16 14"></polyline>
+                </svg>
+
+                <div class="ms-4">
+                  <p class="font-medium">Date posted:</p>
+                  <span class="text-primary font-medium text-sm"
+                    >28th Feb, 2023</span
+                  >
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div><!--end col-->
+
+      <div class="lg:col-span-8 md:col-span-6">
+        <h5 class="text-lg font-semibold">Descripción de Trabajo:</h5>
+
+        <p class="text-slate-400 mt-4">
+          {info.desc}
+        </p>
+
+        <h5 class="text-lg font-semibold mt-6">
+          RESPONSABILIDADES / OBLIGACIONES:
+        </h5>
+        <!-- <p class="text-slate-400 mt-4">
+          It sometimes makes sense to select texts containing the various
+          letters and symbols specific to the output language.
+        </p> -->
+        <ul class="list-none">
+          {
+            info.responsabilities.map((item) => (
+              <li class="text-slate-400 mt-2">
+                <i class="text-primary me-1">{item}</i>
+              </li>
+            ))
+          }
+        </ul>
+
+        <h5 class="text-lg font-semibold mt-6">
+          Required Experience, Skills and Qualifications:
+        </h5>
+        <p class="text-slate-400 mt-4">
+          It sometimes makes sense to select texts containing the various
+          letters and symbols specific to the output language.
+        </p>
+        <ul class="list-none">
+          <li class="text-slate-400 mt-2">
+            <i class="uil uil-arrow-right text-primary me-1"></i>Proven
+            experience as a .NET Developer or Application Developer
+          </li>
+          <li class="text-slate-400 mt-2">
+            <i class="uil uil-arrow-right text-primary me-1"></i>good
+            understanding of SQL and Relational Databases, specifically
+            Microsoft SQL Server.
+          </li>
+          <li class="text-slate-400 mt-2">
+            <i class="uil uil-arrow-right text-primary me-1"></i>Experience
+            designing, developing and creating RESTful web services and APIs
+          </li>
+          <li class="text-slate-400 mt-2">
+            <i class="uil uil-arrow-right text-primary me-1"></i>Basic know how
+            of Agile process and practices
+          </li>
+          <li class="text-slate-400 mt-2">
+            <i class="uil uil-arrow-right text-primary me-1"></i>Good
+            understanding of object-oriented programming.
+          </li>
+          <li class="text-slate-400 mt-2">
+            <i class="uil uil-arrow-right text-primary me-1"></i>Good
+            understanding of concurrent programming.
+          </li>
+          <li class="text-slate-400 mt-2">
+            <i class="uil uil-arrow-right text-primary me-1"></i>Sound knowledge
+            of application architecture and design.
+          </li>
+          <li class="text-slate-400 mt-2">
+            <i class="uil uil-arrow-right text-primary me-1"></i>Excellent
+            problem solving and analytical skills
+          </li>
+        </ul>
+
+        <div class="mt-5">
+          <a
+            href="job-apply.html"
+            class="btn rounded-md bg-emerald-600 hover:bg-emerald-700 border-emerald-600 hover:border-emerald-700 text-white md:ms-2 w-full md:w-auto"
+            >Apply Now</a
+          >
+        </div>
+      </div><!--end col-->
+    </div>
+  </Container>
+</Layout>

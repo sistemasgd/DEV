@@ -101,8 +101,7 @@ const { id, position, depto, desc} = Astro.props;
 
   <div class="mt-3">
     <a
-      
-      href=""
+      href={`/${id}`} 
       class="text-xl hover:text-emerald-600 font-semibold transition-all duration-500"
       >{position}</a
     >
@@ -130,4 +129,3 @@ const { id, position, depto, desc} = Astro.props;
     </div>
   </div>
 </div>
-<!-- href={`/${id}`} -->
