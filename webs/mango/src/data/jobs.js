@@ -62,7 +62,8 @@ export const jobs = [
             'Disponibilidad para viajar',
 
         ],
-        experience: 'Licenciatura en administración de empresas, negocios, mercadotencia o afín. PREFERIDA EXPERIENCIA MINIMA DE 10 AÑOS',
+        experience: 'Licenciatura en administración de empresas, negocios, mercadotencia o afín.',
+        experienceTime: '10+ años',
     },
     {
         id: 'vacante2',
@@ -103,7 +104,8 @@ export const jobs = [
             'Manejo de excel',
             'Conocimiento de procesos de almacén(Recibo, Surtido, Embarques, Inventarios, Manejo de personal, 5s)',
         ],
-        experience: 'Licenciatura en administración, gestión empresarial, comercio, o afines. EXPERIENCIA MINIMA DE 2 AÑOS.',
+        experience: 'Licenciatura en administración, gestión empresarial, comercio, o afines.',
+        experienceTime: '2+ años',
     },
     {
         id: 'vacante3',
@@ -159,6 +161,7 @@ export const jobs = [
             'Resolución de conflictos',
             'Planeación estratégica',
         ],
-        experience: 'Licenciatura en administración, comunicación, mercadotecnia, negocios internacionales o afín. PREFERIDA EXPERIENCIA MINIMA DE 2 AÑOS.',
+        experience: 'Licenciatura en administración, comunicación, mercadotecnia, negocios internacionales o afín.',
+        experienceTime: '2+ años',
     },
 ]
