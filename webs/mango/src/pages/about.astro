@@ -1,0 +1,451 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Container from "../components/Container.astro";
+import Divider from "../components/Divider.astro";
+import PulseButton from "../components/PulseButton.astro";
+import Title from "../components/Title.astro";
+import MySwiper from "../components/MySwiper.jsx";
+---
+
+<Layout title="About us | MangoBC">
+  <div class="relative top-32">
+    <Container>
+      <section>
+        <div class="grid md:grid-cols-12 grid-cols-1 items-center gap-[30px]">
+          <div class="lg:col-span-6 md:col-span-6">
+            <div class="relative">
+              <div class="relative">
+                <img
+                  src="../images/about/ab01.webp"
+                  class="lg:w-[400px] w-[280px] rounded-md shadow dark:shadow-gray-700"
+                  alt="MangoDirector"
+                />
+              </div>
+              <div class="absolute end-0 -bottom-24">
+                <img
+                  src="../images/about/ab02.webp"
+                  class="lg:w-[280px] w-[200px] border-8 border-white dark:border-slate-900 rounded-md shadow dark:shadow-gray-700"
+                  alt="MangoWorkspace"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="lg:col-span-6 md:col-span-6 mt-14 md:mt-0">
+            <div class="lg:ms-5 lg:p-20">
+              <h3
+                class="mb-10 md:text-[26px] text-2xl md:leading-normal leading-normal font-bold"
+              >
+                Nosotros
+              </h3>
+
+              <p class="text-slate-600 text-[20px] max-w-xl mb-10">
+                Nos dedicamos a producir y comercializar productos de consumo
+                masivo, principalmente alimentos. <br /><br />
+                Contamos con distintas marcas que tienen presencia a nivel nacional
+                y en Estados Unidos dentro del canal tradicional y moderno.
+              </p>
+
+              <div class="mt-20">
+                <a
+                  href="contact.html"
+                  class="flex justify-center items-center font-bold shadow-slate-50 w-full md:w-1/2 rounded-[100px] h-10 bg-primary hover:bg-slate-400"
+                  >Contáctanos</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="my-32">
+        <div class="grid grid-cols-1 pb-8 text-center mt-10 md:mt-32">
+          <h3
+            class="font-bold md:leading-normal text-2xl leading-normal text-center lg:px-48"
+          >
+            Ofrecemos soluciones personalizadas y eficientes para satisfacer las
+            necesidades del mercado.
+          </h3>
+        </div>
+      </section>
+
+      <section class="my-32">
+        <div
+          class="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 mt-8 gap-[30px]"
+        >
+          <div
+            class="group p-6 shadow-md rounded-md bg-white hover:bg-gray-600/5 text-center transition-all duration-500"
+          >
+            <div
+              class="w-16 h-16 flex items-center justify-center mx-auto bg-[#f9f3b2] rounded-lg transition-all duration-500 group-hover:shadow-lg"
+            >
+              <svg
+                id="Layer_6"
+                enable-background="new 0 0 64 64"
+                class="w-10"
+                viewBox="0 0 64 64"
+                xmlns="http://www.w3.org/2000/svg"
+                ><g
+                  ><path
+                    d="m58.682 7.692-1.414-1.414-5.293 5.293-1.293-1.293-1.414 1.414 2.707 2.707z"
+                  ></path><path
+                    d="m17.775 13.585-1.6-1.199-5.308 7.077-1.185-1.185-1.414 1.414 2.815 2.816z"
+                  ></path><path
+                    d="m54.975 41.985v-23.059c4.493-.499 8-4.316 8-8.941 0-4.963-4.038-9-9-9-4.624 0-8.442 3.507-8.941 8h-4.059v-1c0-2.757-2.243-5-5-5h-5.184c-.414-1.161-1.514-2-2.816-2h-14c-1.302 0-2.402.839-2.816 2h-5.184c-2.757 0-5 2.243-5 5v44c0 2.757 2.243 5 5 5h25c0 1.654 1.346 3 3 3h1.142c.447 1.721 2 3 3.858 3s3.411-1.279 3.858-3h8.284c.447 1.721 2 3 3.858 3s3.411-1.279 3.858-3h1.142c1.654 0 3-1.346 3-3v-10.333l-3.5-4.667zm-1-39c3.86 0 7 3.141 7 7s-3.14 7-7 7-7-3.141-7-7 3.14-7 7-7zm-13 8h4.059c.463 4.165 3.777 7.478 7.941 7.941v23.059h-2v-4h-10zm4 33v-4h4v14h-16v-14h4v4zm-2-4v2h-4v-2zm-12-35h5c1.654 0 3 1.346 3 3v30h-2v-29c0-1.103-.897-2-2-2h-4zm-18-1c0-.552.449-1 1-1h14c.551 0 1 .448 1 1v4c0 .552-.449 1-1 1h-14c-.551 0-1-.448-1-1zm18 50v1h-25c-1.654 0-3-1.346-3-3v-44c0-1.654 1.346-3 3-3h5v2h-4c-1.103 0-2 .897-2 2v42c0 1.103.897 2 2 2h24zm0-16v13h-24v-42h4.184c.414 1.161 1.514 2 2.816 2h14c1.302 0 2.402-.839 2.816-2h4.184v29zm4.142 20h-1.142c-.551 0-1-.448-1-1v-1h3.382c-.597.522-1.035 1.211-1.24 2zm3.858 3c-1.103 0-2-.897-2-2s.897-2 2-2 2 .897 2 2-.897 2-2 2zm12.142-3h-8.284c-.205-.79-.643-1.479-1.24-2h10.764c-.597.522-1.035 1.211-1.24 2zm3.858 3c-1.103 0-2-.897-2-2s.897-2 2-2 2 .897 2 2-.897 2-2 2zm6-4c0 .552-.449 1-1 1h-1.142c-.205-.79-.643-1.479-1.24-2h3.382zm0-3h-10v-10h7.5l2.5 3.333z"
+                  ></path><path d="m19.975 12.985h13v2h-13z"></path><path
+                    d="m30.975 16.985h2v2h-2z"></path><path
+                    d="m19.975 16.985h9v2h-9z"></path><path
+                    d="m19.975 20.985h13v2h-13z"></path><path
+                    d="m17.775 25.585-1.6-1.199-5.308 7.077-1.185-1.185-1.414 1.414 2.815 2.816z"
+                  ></path><path d="m19.975 24.985h13v2h-13z"></path><path
+                    d="m30.975 28.985h2v2h-2z"></path><path
+                    d="m19.975 28.985h9v2h-9z"></path><path
+                    d="m19.975 32.985h13v2h-13z"></path><path
+                    d="m8.975 48.985h12v-10h-12zm2-8h8v6h-8z"></path><path
+                    d="m22.975 38.985h6v2h-6z"></path><path
+                    d="m22.975 42.985h6v2h-6z"></path><path
+                    d="m22.975 46.985h6v2h-6z"></path>
+                </g>
+              </svg>
+            </div>
+            <div class="mt-4">
+              <h2 class="text-lg font-bold transition-all duration-500">
+                Productos para distribución
+              </h2>
+              <p class="my-3">
+                Tenemos un catálogo de productos alimenticios listos para
+                distribuir en canales retail y detalle.
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="group p-6 shadow-md rounded-md bg-white hover:bg-gray-600/5 text-center transition-all duration-500"
+          >
+            <div
+              class="w-16 h-16 flex items-center justify-center mx-auto bg-[#f9f3b2] rounded-lg transition-all duration-500 group-hover:shadow-lg"
+            >
+              <svg
+                viewBox="0 0 512 512"
+                class="w-10"
+                xmlns="http://www.w3.org/2000/svg"
+                ><path
+                  d="m316 226c5.519531 0 10-4.480469 10-10s-4.480469-10-10-10-10 4.480469-10 10 4.480469 10 10 10zm0 0"
+                ></path><path
+                  d="m507.257812 1.492188c-2.949218-1.820313-6.628906-1.984376-9.730468-.4375-49.730469 24.863281-82.300782 74.480468-85.28125 130.089843-37.613282-46.996093-94.96875-75.144531-156.246094-75.144531-41.824219 0-82.289062 13.050781-116 37.078125v-83.078125c0-5.523438-4.476562-10-10-10s-10 4.476562-10 10v116h-40v-116c0-5.523438-4.476562-10-10-10s-10 4.476562-10 10v116h-40v-116c0-5.523438-4.476562-10-10-10s-10 4.476562-10 10v126c0 27.867188 16.371094 51.976562 40 63.230469v282.769531c0 16.542969 13.457031 30 30 30s30-13.457031 30-30v-100.832031c37.609375 46.808593 94.847656 74.832031 156 74.832031 92.285156 0 171.214844-62.90625 193.6875-150h2.3125v176c0 16.542969 13.457031 30 30 30s30-13.457031 30-30c0-11.839844 0-452.910156 0-472 0-3.464844-1.792969-6.683594-4.742188-8.507812zm-427.257812 480.507812c0 5.515625-4.484375 10-10 10s-10-4.484375-10-10v-30h20zm0-50h-20v-226.726562c3.269531.46875 6.605469.726562 10 .726562s6.730469-.257812 10-.726562zm-10-246c-24.144531 0-44.347656-17.214844-48.992188-40.011719h97.984376c-4.644532 22.796875-24.847657 40.011719-48.992188 40.011719zm186 250c-64.359375 0-123.886719-34.503906-156-90.199219v-146.570312c23.628906-11.253907 40-35.363281 40-63.230469v-17.636719c32.414062-27.347656 73.425781-42.363281 116-42.363281 64.347656 0 123.875 34.503906 156 90.191406v129.808594c0 5.523438 4.476562 9.988281 10 9.988281l6.957031.011719c-21.976562 76-92.8125 130-172.957031 130zm236 46c0 5.515625-4.484375 10-10 10s-10-4.484375-10-10v-30h20zm0-50h-20v-126h20zm0-146c-22.390625 0-38.484375 0-60 0 0-22.847656 0-123.632812 0-146.558594 0-45.730468 22.621094-87.34375 60-112.128906zm0 0"
+                ></path><path
+                  d="m256 136c-66.167969 0-120 53.832031-120 120s53.832031 120 120 120 120-53.832031 120-120-53.832031-120-120-120zm0 220c-55.140625 0-100-44.859375-100-100s44.859375-100 100-100 100 44.859375 100 100-44.859375 100-100 100zm0 0"
+                ></path><path
+                  d="m315.992188 254.972656c.007812.34375.007812.683594.007812 1.027344 0 26.320312-17.625 49.96875-42.863281 57.507812-5.289063 1.582032-8.300781 7.152344-6.71875 12.445313 1.585937 5.300781 7.160156 8.296875 12.445312 6.71875 33.640625-10.054687 57.136719-41.582031 57.136719-76.671875 0-.496094 0-.996094-.011719-1.492188-.128906-5.519531-4.703125-9.914062-10.230469-9.765624-5.523437.128906-9.894531 4.707031-9.765624 10.230468zm0 0"
+                ></path>
+              </svg>
+            </div>
+            <div class="mt-4">
+              <h2 class="text-lg font-bold transition-all duration-500">
+                Línea food service
+              </h2>
+              <p class="my-3">
+                Ofrecemos una variedad de productos diseñados para satisfacer
+                las demandas y estándares del sector HORECA.
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="group p-6 shadow-md rounded-md bg-white hover:bg-gray-600/5 text-center transition-all duration-500"
+          >
+            <div
+              class="w-16 h-16 flex items-center justify-center mx-auto bg-[#f9f3b2] rounded-lg transition-all duration-500 group-hover:shadow-lg"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                id="outline"
+                viewBox="0 0 512 512"
+                class="w-10"
+                ><path
+                  d="M288,488V464a8.00008,8.00008,0,0,0-8-8H264V410.42188l12.28613-18.4292A27.98608,27.98608,0,0,0,301.293,352H304a8.00008,8.00008,0,0,0,8-8V275.314l21.65723-21.65722-11.31446-11.31348L300.686,264H211.314l-21.65673-21.65674-11.31446,11.31348L200,275.314V336H168V272a8.00008,8.00008,0,0,0-8-8H64a8.00008,8.00008,0,0,0-8,8v64H16v16H276a12,12,0,0,1,0,24H16v16h3.71875L32,410.42188V456H16v16H272v8H16v16H280A8.00008,8.00008,0,0,0,288,488ZM104,280h16v11.05566l-4.42188-2.21093a8.00257,8.00257,0,0,0-7.15624,0L104,291.05566ZM72,336V280H88v24a8,8,0,0,0,11.57812,7.15527L112,304.94434l12.42188,6.21093A8,8,0,0,0,136,304V280h16v56Zm144,0V280h80v56Zm20.28125,64-5.33325-8h26.10425l-5.3335,8Zm-48.5625,0h-15.4375l-5.33325-8h26.104Zm-64,0h-15.4375l-5.33325-8h26.104ZM72,410.42188l12-18,12,18V456H72ZM112,416h8v40h-8Zm24-5.57812,12-18,12,18V456H136ZM176,416h8v40h-8Zm24-5.57812,12-18,12,18V456H200ZM240,416h8v40h-8ZM65.052,392l-5.33325,8H44.28125L38.948,392ZM48,416h8v40H48Z"
+                ></path><path
+                  d="M208,136v40a8.00008,8.00008,0,0,0,8,8h16v4.68652l-5.65723,5.65674A8.00035,8.00035,0,0,0,224,200v40a8.00008,8.00008,0,0,0,8,8h48a8.00008,8.00008,0,0,0,8-8V200a8.00035,8.00035,0,0,0-2.34277-5.65674L280,188.68652V184h16a8.00008,8.00008,0,0,0,8-8V136a7.99943,7.99943,0,0,0-3.5625-6.65625l-20.70117-13.80054a23.95005,23.95005,0,0,0-1.69873-13.03869l45.4292-38.9397a23.8284,23.8284,0,0,0,9.0664,0l45.4292,38.9397a23.96251,23.96251,0,0,0,.38281,19.83618l-8.00244,8.00256A8.00035,8.00035,0,0,0,368,136V416H344a7.999,7.999,0,0,0-7.49023,5.19092l-24,64A7.99991,7.99991,0,0,0,320,496H480a8.00008,8.00008,0,0,0,8-8V248a8.01684,8.01684,0,0,0-.21-1.79761l.00488-.00122-24-104a7.99969,7.99969,0,0,0-3.67871-5.061l-36.35254-21.8114A23.90273,23.90273,0,0,0,416,94.13074V80a7.99987,7.99987,0,0,0-2.79395-6.07422l-56-48A7.99748,7.99748,0,0,0,352,24h-6.13086a23.95664,23.95664,0,0,0-35.73828,0H304a7.99748,7.99748,0,0,0-5.20605,1.92578l-56,48A7.99987,7.99987,0,0,0,240,80V94.13074a23.95739,23.95739,0,0,0-7.73657,21.41247L211.5625,129.34375A7.99943,7.99943,0,0,0,208,136Zm64,96H240V203.31348L243.31372,200H268.686L272,203.31348Zm-8-120a8,8,0,1,1-8-8A8.00917,8.00917,0,0,1,264,112Zm0,72H248V168h16Zm24-16h-8v-8a8.00008,8.00008,0,0,0-8-8h-8V134.62378a24.02584,24.02584,0,0,0,8.16406-4.89978L288,140.28125Zm120-56a8,8,0,1,1-8-8A8.00917,8.00917,0,0,1,408,112ZM384,256h88V416H384Zm88,224H331.544l18-48H472Zm-2.05615-240H384V139.31348l5.65918-5.65894a23.9493,23.9493,0,0,0,26.69531-4.11218l32.61426,19.56848ZM400,83.67969V88a23.84618,23.84618,0,0,0-11.15479,2.75952l-41.96484-35.97a23.871,23.871,0,0,0,4.99707-12.3584ZM328,32a8,8,0,1,1-8,8A8.00917,8.00917,0,0,1,328,32ZM256,83.67969l48.12256-41.24854a23.871,23.871,0,0,0,4.99707,12.3584l-41.96484,35.97A23.84618,23.84618,0,0,0,256,88Zm-32,56.60156L239.83594,129.724A24.02584,24.02584,0,0,0,248,134.62378V152h-8a8.00008,8.00008,0,0,0-8,8v8h-8Z"
+                ></path><rect x="416" y="384" width="16" height="16"
+                ></rect><rect x="440" y="384" width="16" height="16"></rect>
+              </svg>
+            </div>
+            <div class="mt-4">
+              <h2 class="text-lg font-bold transition-all duration-500">
+                Línea industrial
+              </h2>
+              <p class="my-3">
+                Tenemos los productos ideales para potenciar tus operaciones y
+                garantizar productos finales excepcionales.
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="group p-6 shadow-md rounded-md bg-white hover:bg-gray-600/5 text-center transition-all duration-500"
+          >
+            <div
+              class="w-16 h-16 flex items-center justify-center mx-auto bg-[#f9f3b2] rounded-lg transition-all duration-500 group-hover:shadow-lg"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                id="Icons"
+                viewBox="0 0 60 60"
+                class="w-10"
+                ><path
+                  d="M43,24V17.416a5.324,5.324,0,0,0-2.519-4.544l-3.9-2.44A3.34,3.34,0,0,1,35,7.584V6.722A1.993,1.993,0,0,0,36,5V3a3,3,0,0,0-3-3H27a3,3,0,0,0-3,3V5a1.993,1.993,0,0,0,1,1.722v.862a3.341,3.341,0,0,1-1.579,2.849l-3.9,2.438A5.325,5.325,0,0,0,17,17.416V24a1.993,1.993,0,0,0,1,1.722V37.278A1.993,1.993,0,0,0,17,39V56a4,4,0,0,0,4,4H39a4,4,0,0,0,4-4V39a1.993,1.993,0,0,0-1-1.722V25.722A1.993,1.993,0,0,0,43,24ZM26,3a1,1,0,0,1,1-1h6a1,1,0,0,1,1,1l0,2H26ZM19,17.416a3.341,3.341,0,0,1,1.579-2.849l3.9-2.438A5.325,5.325,0,0,0,27,7.584V7h6v.584a5.324,5.324,0,0,0,2.519,4.544l3.9,2.44A3.34,3.34,0,0,1,41,17.416V24H19ZM40,37H20V26H40Zm1,19a2,2,0,0,1-2,2H21a2,2,0,0,1-2-2V39H41Z"
+                ></path><path
+                  d="M22,52a1,1,0,0,0,1-1V43a1,1,0,0,0-2,0v8A1,1,0,0,0,22,52Z"
+                ></path><path
+                  d="M22,17a1,1,0,0,0-1,1v3a1,1,0,0,0,2,0V18A1,1,0,0,0,22,17Z"
+                ></path>
+              </svg>
+            </div>
+            <div class="mt-4">
+              <h2 class="text-lg font-bold transition-all duration-500">
+                Marca Blanca
+              </h2>
+              <p class="my-3">
+                Desde la formulación hasta el empaque, nuestro equipo se dedica
+                a hacer realidad tus ideas, bajo tu propia marca.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="my-32">
+        <div class="grid grid-cols-1">
+          <div class="relative overflow-hidden bg-primary rounded-md shadow">
+            <div class="grid md:grid-cols-2 items-center gap-[30px]">
+              <div class="relative">
+                <img
+                  class="aspect-[600/800] object-cover"
+                  src="../images/about/ab03.webp"
+                  alt="MangoWorkspace"
+                />
+              </div>
+
+              <div>
+                <div class="text-blac p-4">
+                  <h2
+                    class="leading-normal text-2xl lg:text-4xl mb-3 font-bold"
+                  >
+                    Servicio continuo y de calidad a nuestros clientes.
+                  </h2>
+
+                  <p class="text-black text-lg lg:text-2xl max-w-xl">
+                    Contamos con un equipo altamente experimentado en el sector,
+                    así como instalaciones adecuadas, listos para impulsar y
+                    comercializar nuestros productos con éxito. Nuestra
+                    dedicación y conocimiento nos permiten ofrecer un servicio
+                    continuo y de calidad a nuestros clientes.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="my-32">
+        <div
+          class="grid md:grid-cols-4 grid-cols-1 items-center gap-[30px] z-1"
+        >
+          <div class="counter-box text-center">
+            <div class="w-16 h-16 flex items-center justify-center mx-auto">
+              <img src="../images/about/counter/counter1.webp" alt="" />
+            </div>
+            <div class="mt-4">
+              <h1
+                class="lg:text-5xl text-4xl font-semibold mb-2 dark:text-white"
+              >
+                +<span class="counter-value" data-val="130">130</span>K
+              </h1>
+              <h5
+                class="counter-head text-sm font-semibold text-slate-400 uppercase"
+              >
+                Puntos de venta
+              </h5>
+            </div>
+          </div>
+          <div class="counter-box text-center">
+            <div class="w-16 h-16 flex items-center justify-center mx-auto">
+              <img src="../images/about/counter/counter2.webp" alt="" />
+            </div>
+            <div class="mt-4">
+              <h1
+                class="lg:text-5xl text-4xl font-semibold mb-2 dark:text-white"
+              >
+                +<span class="counter-value" data-val="400">400</span>
+              </h1>
+              <h5
+                class="counter-head text-sm font-semibold text-slate-400 uppercase"
+              >
+                Rutas de <br />distribución
+              </h5>
+            </div>
+          </div>
+          <div class="counter-box text-center">
+            <div class="w-16 h-16 flex items-center justify-center mx-auto">
+              <img src="../images/about/counter/counter3.webp" alt="" />
+            </div>
+            <div class="mt-4">
+              <h1
+                class="lg:text-5xl text-4xl font-semibold mb-2 dark:text-white"
+              >
+                +<span class="counter-value" data-val="8">8</span>
+              </h1>
+              <h5
+                class="counter-head text-sm font-semibold text-slate-400 uppercase"
+              >
+                Años en el <br />mercado
+              </h5>
+            </div>
+          </div>
+          <div class="counter-box text-center">
+            <div class="w-16 h-16 flex items-center justify-center mx-auto">
+              <img src="../images/about/counter/counter4.webp" alt="" />
+            </div>
+            <div class="mt-4">
+              <h1
+                class="lg:text-5xl text-4xl font-semibold mb-2 dark:text-white"
+              >
+                +<span class="counter-value" data-val="40">40</span>
+              </h1>
+              <h5
+                class="counter-head text-sm font-semibold text-slate-400 uppercase"
+              >
+                SKU's <br /> listos
+              </h5>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="my-32">
+        <Title body="Socios comerciales" styles="text-center mb-10" />
+        <MySwiper client:load />
+      </section>
+
+      <section class="my-32">
+        <div class="grid grid-cols-1 pb-8 text-center">
+          <h3
+            class="mb-4 md:text-[26px] md:leading-normal text-2xl leading-normal font-bold"
+          >
+            FAQ's
+          </h3>
+        </div>
+
+        <div class="grid md:grid-cols-2 grid-cols-1 mt-8 gap-[30px]">
+          <div class="flex">
+            <i class="mdi mdi-help-circle-outline text-black text-xl me-2"></i>
+            <div class="flex-1">
+              <h5 class="mb-2 text-lg font-bold">¿Qué productos manejan?</h5>
+              <p class="text-slate-600">
+                En partnership con <span class="font-bold underline"
+                  >INDEVA</span
+                >, planta localizada en Morelia Michoacán, desarrollamos
+                productos líderes y ofrecemos soluciones para la industria, B2B,
+                food service o proyectos especiales. Si quieres conocer más de
+                nuestros productos, puedes descargar aquí el catálogo 2023.
+              </p>
+            </div>
+          </div>
+
+          <div class="flex">
+            <i class="mdi mdi-help-circle-outline text-black text-xl me-2"></i>
+            <div class="flex-1">
+              <h5 class="mb-2 text-lg font-bold">
+                ¿Hacen envíos a toda la república?
+              </h5>
+              <p class="text-slate-600">
+                Facilitamos envíos a nivel nacional en todo México para nuestros
+                clientes. No importa dónde se encuentre tu empresa, estamos
+                listos para entregar nuestros productos directamente en tu
+                ubicación.
+              </p>
+            </div>
+          </div>
+
+          <div class="flex">
+            <i class="mdi mdi-help-circle-outline text-black text-xl me-2"></i>
+            <div class="flex-1">
+              <h5 class="mb-2 text-lg font-bold">¿Dónde están ubicados?</h5>
+              <p class="text-slate-600">
+                Tanto las oficinas administrativas de Mango Business Center como
+                la planta de nuestro aliado Indeva, están localizadas en
+                Morelia, Michoacán
+              </p>
+            </div>
+          </div>
+
+          <div class="flex">
+            <i class="mdi mdi-help-circle-outline text-black text-xl me-2"></i>
+            <div class="flex-1">
+              <h5 class="mb-2 text-lg font-bold">
+                ¿Cuál es el proceso de compra?
+              </h5>
+              <p class="text-slate-600">
+                Cada línea de negocios tiene un proceso de compra distinto,
+                dependiendo del interés que tengas para colaborar con nosotros,
+                ya sea distribución, línea food service, o línea industrial, te
+                dirigiremos con un asesor que te llevará paso a paso para
+                concluir el proceso de compra.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <Divider />
+    </Container>
+  </div>
+</Layout>
+
+<script>
+  let valueDisplays = document.querySelectorAll(".counter-value");
+  let interval = 3000;
+
+  valueDisplays.forEach((valueDisplay) => {
+    let startValue = 0;
+    let endValue = parseInt(valueDisplay.getAttribute("data-val"));
+    let duration = Math.floor(interval / endValue);
+    let counter = setInterval(function () {
+      startValue += 1;
+      valueDisplay.textContent = startValue;
+      if (startValue === endValue) {
+        clearInterval(counter);
+      }
+    }, duration);
+  });
+</script>
+
+<!-- <div
+          class="group p-6 shadow dark:shadow-gray-700 rounded-md bg-white hover:bg-emerald-600/5 dark:bg-slate-900 dark:hover:bg-emerald-600/10 text-center transition-all duration-500"
+        >
+          <div
+            class="w-16 h-16 flex items-center justify-center mx-auto bg-emerald-600/5 group-hover:bg-emerald-600 dark:bg-emerald-600/10 dark:group-hover:bg-emerald-600 shadow dark:shadow-gray-700 rounded-lg transition-all duration-500"
+          >
+            <i
+              class="mdi mdi-timer-sand text-[30px] text-emerald-600 group-hover:text-white"
+            ></i>
+          </div>
+
+          <div class="mt-4">
+            <a
+              href=""
+              class="text-lg font-semibold hover:text-emerald-600 transition-all duration-500"
+              >Save Time</a
+            >
+
+            <p class="text-slate-400 mt-3 mb-2">
+              Many desktop publishing now use and a search for job.
+            </p>
+
+            <a
+              href=""
+              class="hover:text-emerald-600 font-medium transition-all duration-500"
+              >Read More <i class="mdi mdi-arrow-right"></i>
+            </a>
+          </div>
+        </div> -->
