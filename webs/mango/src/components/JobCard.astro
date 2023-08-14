@@ -6,17 +6,15 @@ export interface Props {
   desc: string;
 }
 
-const { id, position, depto, desc} = Astro.props;
+const { id, position, depto, desc } = Astro.props;
 ---
 
 <div
-  class="group p-6 rounded-lg border border-emerald-600/20 dark:border-emerald-600/40 bg-white dark:bg-slate-900 hover:bg-emerald-600/[0.02] hover:dark:bg-emerald-600/5 hover:shadow-md hover:shadow-emerald-600/5 transition-all duration-500"
+  class="group p-6 rounded-lg border-4 border-primary bg-white hover:shadow-xl dark:bg-slate-200 dark:hover:shadow-gray-700 transition-all duration-500"
 >
   <div class="flex justify-between items-start">
     <div>
-      <div
-        class="w-14 h-14 flex items-center justify-center bg-white dark:bg-slate-900 shadow dark:shadow-gray-700 rounded-full mb-2"
-      >
+      <div class="w-14 h-14 flex items-center justify-center rounded-full mb-2">
         <svg
           height="200px"
           width="200px"
@@ -89,42 +87,40 @@ const { id, position, depto, desc} = Astro.props;
           </g>
         </svg>
       </div>
-      <h2
-        class="text-lg hover:text-emerald-600 font-semibold transition-all duration-500"
-      >
+      <h2 class="text-lg font-semibold">
         {depto}
       </h2>
     </div>
-
-    <div class="flex items-center"></div>
   </div>
 
   <div class="mt-3">
     <a
-      href={`/${id}`} 
-      class="text-xl hover:text-emerald-600 font-semibold transition-all duration-500"
-      >{position}</a
-    >
+      href={`/${id}`}
+      class="text-xl hover:text-blue-600 hover:underline font-semibold transition-all"
+      >{position} <span class="mdi mdi-open-in-new"></span>
+    </a>
     <p class="text-slate-400 mt-2">{desc}</p>
 
     <div class="mt-3">
-      <a href="">
-        <span
-          class="bg-orange-500/5 hover:bg-orange-500/20 dark:bg-orange-500/10 hover:dark:bg-orange-500/30 inline-block text-orange-500 px-4 text-[14px] font-medium rounded-full mt-2 me-1 transition-all duration-500"
-          >Tiempo completo</span
-        >
-      </a>
-      <a href="">
-        <span
-          class="bg-purple-600/5 hover:bg-purple-600/20 dark:bg-purple-600/10 hover:dark:bg-purple-600/30 inline-block text-purple-600 px-4 text-[14px] font-medium rounded-full mt-2 me-1 transition-all duration-500"
-          >Sueldo</span
-        >
-      </a>
-      <a href="">
-        <span
-          class="bg-emerald-600/5 hover:bg-emerald-600/20 dark:bg-emerald-600/10 hover:dark:bg-emerald-600/30 inline-block text-emerald-600 px-4 text-[14px] font-medium rounded-full mt-2 transition-all duration-500"
-          ><i class="uil uil-map-marker"></i>Presencial</span
-        >
+      <span
+        class="bg-orange-500/5 hover:bg-orange-500/20 dark:bg-orange-500/10 hover:dark:bg-orange-500/30 inline-block text-orange-500 px-4 text-[14px] font-medium rounded-full mt-2 me-1 transition-all duration-500"
+        >Tiempo completo</span
+      >
+      <span
+        class="bg-purple-600/5 hover:bg-purple-600/20 dark:bg-purple-600/10 hover:dark:bg-purple-600/30 inline-block text-purple-600 px-4 text-[14px] font-medium rounded-full mt-2 me-1 transition-all duration-500"
+        >Sueldo</span
+      >
+      <span
+        class="bg-emerald-600/5 hover:bg-emerald-600/20 dark:bg-emerald-600/10 hover:dark:bg-emerald-600/30 inline-block text-emerald-600 px-4 text-[14px] font-medium rounded-full mt-2 transition-all duration-500"
+        ><i class="uil uil-map-marker"></i>Presencial</span
+      >
+    </div>
+    <div class="mt-3">
+      <a
+        class="font-bold float-right shadow-slate-50 w-fit rounded-[10px] h-10 bg-primary p-2 hover:bg-slate-400"
+        href={`/${id}`}
+      >
+       Ver detalles<span class="mdi mdi-arrow-right"></span>
       </a>
     </div>
   </div>

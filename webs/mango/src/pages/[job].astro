@@ -52,8 +52,16 @@ const CARD_JOB_DESCRIPTION = [
   <Container>
     <div class="relative grid md:grid-cols-12 grid-cols-1 gap-[30px] top-32">
       <div class="lg:col-span-4 md:col-span-6">
+        <div class="sticky top-32">
+          <a
+            class="font-bold float-left shadow-slate-50 w-fit rounded-[10px] h-10 bg-primary p-2 hover:bg-slate-400"
+            href="/jobs#vacancies"
+          >
+            <span class="mdi mdi-arrow-left"></span>Regresar
+          </a>
+        </div>
         <div
-          class="shadow dark:shadow-gray-700 rounded-md bg-white dark:bg-slate-900 sticky top-32"
+          class="shadow dark:shadow-gray-700 rounded-md bg-white dark:bg-slate-900 sticky top-48"
         >
           <div class="p-6">
             <h5 class="text-xl font-semibold dark:text-white">
@@ -94,7 +102,9 @@ const CARD_JOB_DESCRIPTION = [
         <ul class="list-none">
           {
             info.responsabilities.map((item) => (
-              <li class="text-black mt-2 list-disc dark:text-gray-300">{item}</li>
+              <li class="text-black mt-2 list-disc dark:text-gray-300">
+                {item}
+              </li>
             ))
           }
         </ul>
@@ -105,7 +115,9 @@ const CARD_JOB_DESCRIPTION = [
         <ul class="list-none">
           {
             info.skills.map((item) => (
-              <li class="text-black mt-2 list-disc dark:text-gray-300">{item}</li>
+              <li class="text-black mt-2 list-disc dark:text-gray-300">
+                {item}
+              </li>
             ))
           }
         </ul>
