@@ -1,0 +1,170 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Container from "../components/Container.astro";
+import Divider from "../components/Divider.astro";
+import FormContact from "../components/FormContact.astro";
+---
+
+<Layout title="Industrial | MangoBC">
+  <section
+    class="flex items-center justify-center h-screen bg-fixed bg-center bg-no-repeat bg-cover mb-12 bg-[url('./images/industrial/industrial_back.webp')]"
+  >
+    <Container>
+      <div class="grid grid-cols-1 lg:grid-cols-2 justify-center">
+        <div
+          class="flex flex-col justify-start bg-slate-600 bg-opacity-70 p-2 md:p-10 shadow-lg rounded-lg"
+        >
+          <h4
+            class="leading-normal text-4xl md:text-5xl mb-5 font-bold text-white animate-fade-right animate-duration-1000"
+          >
+            Sabor a tu medida, calidad asegurada.
+          </h4>
+          <p
+            class="leading-normal text-2xl md:text-3xl text-white animate-fade-right animate-duration-1000 animate-delay-500"
+          >
+            ¿Qué necesitas para lanzar tu producto al mercado? Sea lo que sea,
+            estamos aquí para brindarte el apoyo que requieres
+          </p>
+        </div>
+      </div>
+    </Container>
+  </section>
+
+  <Container>
+    <section
+      class="py-24 items-center justify-center flex relative overflow-hidden"
+    >
+      <div class="grid lg:grid-cols-2 grid-cols-1 items-center gap-[30px]">
+        <div class="mb-12 md:mb-36">
+          <div class="relative">
+            <div
+              class="relative flex justify-end md:justify-center lg:justify-end z-[1]"
+            >
+              <img
+                src="../images/industrial/hornos.webp"
+                class="lg:w-[400px] w-[280px] rounded-xl shadow dark:shadow-gray-700"
+                alt="hornos"
+              />
+            </div>
+            <div class="absolute lg:-start-0 md:start-20 -bottom-28 z-[1]">
+              <img
+                src="../images/industrial/empaque.webp"
+                class="lg:w-[280px] w-[200px] border-8 border-white dark:border-slate-900 rounded-xl"
+                alt="empaque industrial"
+              />
+            </div>
+            <div
+              class="-left-0 md:left-28 lg:left-0 opacity-80 overflow-hidden absolute w-[330px] h-[330px] lg:h-[500px] md:h-[360px] lg:w-[500px] md:w-[360px] bg-gradient-to-tl to-yellow-600/5 via-yellow-600/50 from-yellow-600 bottom-1/2 translate-y-1/2 start-1/2 ltr:-translate-x-1/2 rtl:translate-x-1/2 rounded-full"
+            >
+            </div>
+          </div>
+        </div>
+        <div class="mt-14 md:mt-0">
+          <div class="flex flex-col md:gap-4 m-auto lg:me-8 z-[2]">
+            <h4
+              class="mb-4 md:leading-normal text-2xl md:text-4xl leading-normal font-bold"
+            >
+              Marca Blanca
+            </h4>
+
+            <p
+              class="text-black text-lg md:text-xl text-justify leading-normal tracking-tight break-before-all"
+            >
+              En Mango Business Center, nos destacamos por producir alimentos de
+              alta calidad para marcas blancas a precios competitivos en el
+              sector de tiendas de autoservicio. Nos enorgullece ofrecer a
+              nuestros socios comerciales total confidencialidad y una asesoría
+              continua para asegurar el éxito del producto. Confía en nuestra
+              experiencia y compromiso con la calidad mientras trabajamos juntos
+              para llevar tu marca al siguiente nivel.
+            </p>
+            <div class="mt-20">
+              <a
+                href="download/mango_labs.pdf"
+                rel="noreferrer"
+                target="_blank"
+                class="flex justify-center items-center font-bold shadow-slate-50 w-full md:w-1/2 rounded-[100px] h-10 bg-primary hover:bg-slate-400"
+                >Descarga</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="my-16">
+      <div class="grid grid-cols-1 md:grid-cols-2 items-center gap-[30px]">
+        <div class="flex flex-col">
+          <h4
+            class="mb-4 md:leading-normal text-2xl md:text-4xl leading-normal font-bold"
+          >
+            Maquila
+          </h4>
+
+          <p
+            class="text-black text-lg md:text-xl text-justify leading-normal tracking-tighter break-before-all"
+          >
+            Estamos aquí para brindarte un apoyo integral en cada etapa del
+            proceso de creación, innovación y realización de productos
+            alimenticios. Desde la conceptualización hasta el lanzamiento,
+            nuestro equipo estará a tu lado para proporcionarte el conocimiento
+            y la experiencia necesarios. Confía en nosotros para llevar tus
+            ideas de productos alimenticios a la realidad con éxito.
+          </p>
+        </div>
+        <div class="order-first md:order-last">
+          <img
+            class="aspect-[516/436] object-contain max-w-full mx-auto border-8 border-white rounded-3xl shadow-xl"
+            src="../images/industrial/hornos.webp"
+            alt="hornos"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section class="my-16">
+      <h3
+        class="mb-4 md:leading-normal text-2xl md:text-4xl leading-normal font-bold"
+      >
+        Nuestras certificaciones
+      </h3>
+      <div class="flex flex-row items-center justify-center gap-10 md:gap-32">
+        <img
+          class="max-w-[75px] object-contain"
+          src="../images/industrial/logos/logo1.webp"
+          alt="certificado"
+        />
+        <img
+          class="max-w-[75px] object-contain"
+          src="../images/industrial/logos/logo2.webp"
+          alt="certificado"
+        />
+        <img
+          class="max-w-[75px] object-contain"
+          src="../images/industrial/logos/logo3.webp"
+          alt="certificado"
+        />
+      </div>
+    </section>
+
+    <section class="my-32">
+      <div class="flex flex-col justify-center gap-4 mb-10 p-2">
+        <h3
+          class="mb-4 md:leading-normal text-2xl md:text-4xl leading-normal font-bold"
+        >
+          ¡Contáctanos!
+        </h3>
+        <p class="text-slate-600 text-lg md:text-2xl">
+          Si deseas obtener más información acerca de nuestros productos o
+          requieres una solución personalizada acerca de nuestros productos o
+          requieres una solución personalizada, por favor comparte tus datos con
+          nosotros. Nuestro equipo estará encantado de atenderte.
+        </p>
+      </div>
+      <div class="md:px-10 lg:px-32">
+        <FormContact />
+      </div>
+    </section>
+    <Divider />
+  </Container>
+</Layout>
