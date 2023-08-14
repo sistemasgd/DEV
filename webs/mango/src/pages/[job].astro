@@ -2,6 +2,7 @@
 import Layout from "../layouts/Layout.astro";
 import Container from "../components/Container.astro";
 import Paragraph from "../components/Paragraph.astro";
+import Divider from "../components/Divider.astro";
 import { jobs } from "../data/jobs";
 import { Icons } from "../data/Icons";
 export async function getStaticPaths() {
@@ -50,16 +51,16 @@ const CARD_JOB_DESCRIPTION = [
 
 <Layout title={`Jobs | ${info.id}`}>
   <Container>
-    <div class="relative grid md:grid-cols-12 grid-cols-1 gap-[30px] top-32">
+    <div class="relative grid md:grid-cols-12 grid-cols-1 gap-[30px] top-32 pb-32">
+      <div class="sm:col-span-12 sm:sticky sm:top-32">
+        <a
+          class="font-bold float-left shadow-slate-50 w-fit rounded-[10px] h-10 bg-primary p-2 hover:bg-slate-400"
+          href="/jobs#vacancies"
+        >
+          <span class="mdi mdi-arrow-left"></span>Regresar
+        </a>
+      </div>
       <div class="lg:col-span-4 md:col-span-6">
-        <div class="sticky top-32">
-          <a
-            class="font-bold float-left shadow-slate-50 w-fit rounded-[10px] h-10 bg-primary p-2 hover:bg-slate-400"
-            href="/jobs#vacancies"
-          >
-            <span class="mdi mdi-arrow-left"></span>Regresar
-          </a>
-        </div>
         <div
           class="shadow dark:shadow-gray-700 rounded-md bg-white dark:bg-slate-900 sticky top-48"
         >
@@ -133,5 +134,6 @@ const CARD_JOB_DESCRIPTION = [
         </div> -->
       </div>
     </div>
+    <Divider />
   </Container>
 </Layout>
