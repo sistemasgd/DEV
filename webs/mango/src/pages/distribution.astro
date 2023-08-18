@@ -1,0 +1,278 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Container from "../components/Container.astro";
+import Divider from "../components/Divider.astro";
+import { estados } from "../data/estados.js";
+
+const marcas = [
+  {
+    id: 0,
+    title: "DELIBARRAS",
+  },
+  {
+    id: 1,
+    title: "SABOR MIO",
+  },
+  {
+    id: 2,
+    title: "NANNA POSTRERO",
+  },
+  {
+    id: 3,
+    title: "BEGAN",
+  },
+];
+---
+
+<Layout title="Distribution | MangoBC">
+  <section
+    class="flex items-center justify-center h-screen md:bg-fixed bg-center bg-no-repeat bg-cover mb-12 bg-[url('../images/distribucion/distribucion_back.webp')]"
+  >
+    <Container>
+      <div class="grid grid-cols-1 lg:grid-cols-2 justify-center">
+        <div
+          class="flex flex-col justify-start bg-slate-100 bg-opacity-10 p-2 md:p-10 shadow-lg rounded-lg"
+        >
+          <h4
+            class="text-4xl md:text-5xl text-white animate-fade-right animate-duration-1000"
+          >
+            Conviértete en <span class="font-bold">socio distribuidor</span> y haz
+            negocio con nosotros.
+          </h4>
+        </div>
+      </div>
+    </Container>
+  </section>
+
+  <Container>
+    <section class="my-16">
+      <div
+        class="m-auto flex justify-center z-[1]"
+      >
+        <img
+          class="w-7"
+          src="../images/flecha.webp"
+          alt="flecha"
+        />
+      </div>
+      <h3 class="mb-4 text-3xl font-bold dark:text-white">
+        Nuestros<br />productos:
+      </h3>
+      <div class="flex flex-col items-center gap-4">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-4">
+          <div
+            class="flex flex-col justify-center items-center gap-4 border border-grey shadow-lg hover:shadow-2xl rounded-lg p-5 dark:bg-slate-200 dark:hover:shadow-gray-700 transition-all duration-500"
+          >
+            <img
+              class="aspect-[200/200] w-[75px] h-[100px]"
+              src="../images/distribucion/deli.webp"
+              alt="delibarras"
+            />
+            <h4 class="text-2xl font-bold">Deli Barras</h4>
+            <p class="font-semibold text-center p-4">
+              Una auténtica delicia. Disponible en sus 3 líneas, tradicional,
+              mini y yogurt.
+            </p>
+          </div>
+          <div
+            class="flex flex-col justify-center items-center gap-4 border border-grey shadow-lg hover:shadow-2xl rounded-lg p-5 dark:bg-slate-200 dark:hover:shadow-gray-700 transition-all duration-500"
+          >
+            <img
+              class="aspect-[200/200] w-[100px] h-[100px]"
+              src="../images/distribucion/sm.webp"
+              alt="sabor mio"
+            />
+            <h4 class="text-2xl font-bold">Sabor Mio</h4>
+            <p class="font-semibold text-center p-4">
+              Nuestra línea de empanizadores. No requieren huevo ni otros
+              condimentos, son súper crunchy y rinden mucho más.
+            </p>
+          </div>
+          <div
+            class="flex flex-col justify-center items-center gap-4 border border-grey shadow-lg hover:shadow-2xl rounded-lg p-5 dark:bg-slate-200 dark:hover:shadow-gray-700 transition-all duration-500"
+          >
+            <img
+              class="aspect-[200/200] w-[120px] h-[100px]"
+              src="../images/distribucion/np.webp"
+              alt="nanna postrero"
+            />
+            <h4 class="text-2xl font-bold">Nanná postrero</h4>
+            <p class="font-semibold text-center p-4">
+              Deliciosa galletería fina. Productos elaborados con especial
+              atención a los detalles.
+            </p>
+          </div>
+        </div>
+        <div class="inline-flex items-center gap-1">
+          <img class="w-7" src="../images/flecha.webp" alt="flecha" />
+          <p class="text-xl font-bold dark:text-white">
+            Descarga el catálogo con todos nuestros productos
+          </p>
+          <a
+            href="../download/mango_catalogo.pdf"
+            rel="noreferrer"
+            target="_blank"
+            class="flex justify-center items-center font-bold shadow-slate-50 w-full md:w-1/2 rounded-[100px] h-10 bg-primary hover:bg-slate-400"
+            >Ver catálogo</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <section class="my-16">
+      <h3 class="mb-4 text-3xl font-bold dark:text-white">
+        ¿Por qué distribuir con nosotros?
+      </h3>
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-4 mb-4">
+        <div class="flex flex-col justify-center items-center gap-4">
+          <img
+            class="aspect-[200/200] w-[150px] h-[150px]"
+            src="../images/distribucion/d1.webp"
+            alt="consumo"
+          />
+          <p class="font-semibold text-center dark:text-white">
+            Productos de consumo masivo.
+          </p>
+        </div>
+        <div class="flex flex-col justify-center items-center gap-4">
+          <img
+            class="aspect-[200/200] w-[150px] h-[150px]"
+            src="../images/distribucion/d2.webp"
+            alt="ganancia"
+          />
+          <p class="font-semibold text-center dark:text-white">
+            Excelentes márgenes de ganancia.
+          </p>
+        </div>
+        <div class="flex flex-col justify-center items-center gap-4">
+          <img
+            class="aspect-[200/200] w-[150px] h-[150px]"
+            src="../images/distribucion/d3.webp"
+            alt="exclusividad"
+          />
+          <p class="font-semibold text-center dark:text-white">
+            Zonas disponibles con exclusividad.
+          </p>
+        </div>
+        <div class="flex flex-col justify-center items-center gap-4">
+          <img
+            class="aspect-[200/200] w-[150px] h-[150px]"
+            src="../images/distribucion/d4.webp"
+            alt="beneficios"
+          />
+          <p class="font-semibold text-center dark:text-white">
+            Beneficios exclusivos para distribuidores.
+          </p>
+        </div>
+      </div>
+    </section>
+  </Container>
+
+  <section class="bg-primary p-12">
+    <Container>
+      <div class="flex flex-col gap-6">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+          <h3 class="mb-4 text-xl font-bold">
+            Consulta aquí si tu territorio está disponible para distribución.
+          </h3>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <div>
+            <label for="marca" class="block font-bold mb-2"> Marca:</label>
+            <select
+              id="marca"
+              name="marca"
+              class="shadow appearance-none border rounded w-full py-2 px-3 leading-tight focus:outline-primary focus:shadow-outline"
+            >
+              {marcas.map((marca) => <option>{marca.title}</option>)}
+            </select>
+          </div>
+          <div>
+            <label for="estado" class="block font-bold mb-2"> Estado:</label>
+            <select
+              id="estado"
+              name="estado"
+              class="shadow appearance-none border rounded w-full py-2 px-3 leading-tight focus:outline-primary focus:shadow-outline"
+            >
+              {
+                estados.map((estado) => (
+                  <option class="option" value={estado.zonas}>
+                    {estado.nombre}
+                  </option>
+                ))
+              }
+            </select>
+          </div>
+          <div class="flex flex-col justify-end md:items-center">
+            <p class="text-lg font-bold">
+              Zonas disponibles:<br />
+              <span id="zonas"></span>
+            </p>
+          </div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 items-center">
+          <h3 class="text-lg font-semibold">
+            ¿Necesitas una cotización para distribución?
+          </h3>
+          <a
+            href="/contact"
+            class="flex justify-center items-center font-bold text-white shadow-slate-50 w-full md:w-1/2 rounded-[100px] h-10 bg-black hover:bg-slate-400"
+            >Cotizar</a
+          >
+        </div>
+      </div>
+    </Container>
+  </section>
+
+  <Container>
+    <div class="flex flex-col justify-center h-[300px]">
+      <div
+        class="absolute start-44 -bottom-[85rem] z-[1] hidden lg:block"
+      >
+        <img
+          class="w-7"
+          src="../images/flecha.webp"
+          alt="flecha"
+        />
+      </div>
+       <div
+        class="absolute start-[75rem] -bottom-[100rem] z-[1] hidden lg:block"
+      >
+        <img
+          class="w-7"
+          src="../images/flecha.webp"
+          alt="flecha"
+        />
+      </div>
+      <h3 class="mb-4 text-2xl font-bold text-center dark:text-white">
+        Contacto
+      </h3>
+      <div class="flex items-center justify-evenly text-center">
+        <h3 class="mb-4 text-2xl font-bold dark:text-white">
+          Telefono: <br />
+          <span class="text-xl">000-000-0000</span>
+        </h3>
+        <h3 class="mb-4 text-2xl font-bold dark:text-white">
+          Correo:<br />
+          <a
+            class="underline text-xl dark:text-white"
+            href="mailto:contacto@mangobc.com"
+          >
+            contacto@magobc.com
+          </a>
+        </h3>
+      </div>
+    </div>
+  </Container>
+  <Divider />
+</Layout>
+
+<script>
+  let select_estado = document.querySelector("#estado");
+  let zonas = document.querySelector("#zonas");
+  if (select_estado)
+    select_estado.addEventListener("change", function (event) {
+      console.log((event.target as HTMLButtonElement).value);
+      zonas.textContent = (event.target as HTMLButtonElement).value;
+    });
+</script>
