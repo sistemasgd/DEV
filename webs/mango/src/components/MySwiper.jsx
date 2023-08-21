@@ -1,4 +1,3 @@
-
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Autoplay, Navigation } from 'swiper'
 // Import Swiper styles
@@ -10,6 +9,10 @@ export default function MySwiper() {
 
     return (
         <Swiper
+            style={{
+                '--swiper-navigation-color': '#facb22',
+                '--swiper-pagination-color': '#facb22',
+            }}
             slidesPerView={4}
             navigation={true}
             loop={true}
