@@ -411,7 +411,7 @@ import MySwiper from "../components/MySwiper.jsx";
     let duration = Math.floor(interval / endValue);
     let counter = setInterval(function () {
       startValue += 1;
-      valueDisplay.textContent = startValue;
+      valueDisplay.textContent  = startValue.toString();
       if (startValue === endValue) {
         clearInterval(counter);
       }
