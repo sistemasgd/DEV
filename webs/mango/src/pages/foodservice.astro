@@ -3,6 +3,8 @@ import Layout from "../layouts/Layout.astro";
 import Container from "../components/Container.astro";
 import Divider from "../components/Divider.astro";
 import FormContact from "../components/FormContact.astro";
+import Modal from "../components/Modal.astro";
+import { prods } from "../data/foodservice_prods.js";
 ---
 
 <Layout title="Food Service | MangoBC">
@@ -20,7 +22,9 @@ import FormContact from "../components/FormContact.astro";
             ¡Haz que tu <span class="text-primary">negocio</span>
             <br />brille con <span class="font-bold">nuestros productos!</span>
           </h4>
-          <p class="text-slate-600 sm:text-lg md:text-2xl max-w-xl animate-fade-right animate-duration-1000 animate-delay-500 dark:dark:text-white">
+          <p
+            class="text-slate-600 sm:text-lg md:text-2xl max-w-xl animate-fade-right animate-duration-1000 animate-delay-500 dark:dark:text-white"
+          >
             Descubre cómo nuestra oferta de productos para la línea HORECA puede
             potenciar tus experiencias culinarias y elevar tu negocio a un nuevo
             nivel de satisfacción.
@@ -50,32 +54,34 @@ import FormContact from "../components/FormContact.astro";
     <section class="my-32">
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 p-2">
         <div class="flex flex-col justify-center gap-4">
-          <h3 class="mb-4 text-3xl font-bold dark:text-white">Nuestros productos</h3>
+          <h3 class="mb-4 text-3xl font-bold dark:text-white">
+            Nuestros productos
+          </h3>
           <p class="text-slate-600 text-lg dark:text-white">
             Tenemos una amplia gama de productos diseñados especialmente para
             hoteles, restaurantes, catering, comedores industriales, plantas de
             procesamiento de alimentos y autoservicios.
           </p>
-          <div class="grid grid-cols-2 gap-4">
-            <ul>
-              <li class="bg-[#f9f3b2] rounded-lg p-4 border-slate-400 mb-3"><span class="mdi mdi-shaker-outline">Pan molido natural</span></li>
-              <li class="bg-[#f9f3b2] rounded-lg p-4 border-slate-400 mb-3"><span class="mdi mdi-shaker-outline">Empanizador libre de gluten</span></li>
-              <li class="bg-[#f9f3b2] rounded-lg p-4 border-slate-400 mb-3"><span class="mdi mdi-shaker-outline">Batter</span></li>
-              <li class="bg-[#f9f3b2] rounded-lg p-4 border-slate-400 mb-3"><span class="mdi mdi-shaker-outline">Harinas</span></li>
-              <li class="bg-[#f9f3b2] rounded-lg p-4 border-slate-400 mb-3"><span class="mdi mdi-shaker-outline">Ingredientes</span></li>
-            </ul>
-            <ul>
-              <li class="bg-[#f9f3b2] rounded-lg p-4 border-slate-400 mb-3"><span class="mdi mdi-shaker-outline">Panko</span></li>
-              <li class="bg-[#f9f3b2] rounded-lg p-4 border-slate-400 mb-3"><span class="mdi mdi-shaker-outline">Empanizador condimentado</span></li>
-              <li class="bg-[#f9f3b2] rounded-lg p-4 border-slate-400 mb-3"><span class="mdi mdi-shaker-outline">Tempura</span></li>
-              <li class="bg-[#f9f3b2] rounded-lg p-4 border-slate-400 mb-3"><span class="mdi mdi-shaker-outline">Semillas</span></li>
-              <li class="bg-[#f9f3b2] rounded-lg p-4 border-slate-400 mb-3"><span class="mdi mdi-shaker-outline">Otros</span></li>
+          <div class=" ">
+            <ul class="grid grid-cols-2 gap-4">            
+            {
+              prods.map((item) => (
+                    <li data-modal-target={`defaultModal${item.id}`} data-modal-toggle={`defaultModal${item.id}`} class="cursor-pointer hover:shadow-md bg-[#f9f3b2] rounded-lg p-4 border-slate-400 mb-3"><span class="mdi mdi-shaker-outline"> {item.title}</span></li>
+                    <Modal 
+                      id={item.id} 
+                      title={item.title}
+                      desc={item.desc}
+                      display={item.display}
+                      file={item.file}
+                    />
+                ))
+            }
             </ul>
           </div>
         </div>
         <div>
           <div class="relative">
-            <div class="relative flex justify-center z-[1] ">
+            <div class="relative flex justify-center z-[1]">
               <img
                 src="../images/foodservice/frasco.webp"
                 class="lg:w-[400px] w-[280px] shadow-xl rounded-xl border-8 border-white dark:shadow-gray-700"
