@@ -1,4 +1,6 @@
-<form class="grid grid-cols-1 md:grid-cols-2 gap-6">
+---
+---
+<form id="contact-form" class="grid grid-cols-1 md:grid-cols-2 gap-6">
   <div class="mb-4 col-span-2 md:col-span-1">
     <label for="name" class="block font-bold mb-2 dark:text-white">
       Nombre:</label
@@ -110,3 +112,46 @@
     }
   }
 </style>
+
+<script>
+  import emailjs from "@emailjs/browser";
+  import { KEY } from "../data/email.js";
+  import Swal from "sweetalert2";
+
+  const form = document.querySelector("#contact-form");
+  form.addEventListener("submit", async (event) => {
+    event.preventDefault();
+
+    const formData = new FormData(form as HTMLFormElement);
+
+    try {
+      await emailjs.send(
+        KEY.SERVICE_ID,
+        KEY.TEMPLATE_ID,
+        {
+          name: formData.get("name"),
+          message: formData.get("message"),
+          phone: formData.get("phone"),
+          service: formData.get("service"),
+          email: formData.get("email"),
+        },
+        KEY.USER_ID
+      );
+
+      Swal.fire({
+        title: "Exito!",
+        text: "Correo enviado",
+        icon: "success",
+        confirmButtonText: "ok",
+      }).then((result) => {
+        if (result) {
+          (form as HTMLFormElement).reset();
+        }
+      });
+
+      console.log("Email sent successfully");
+    } catch (error) {
+      console.error("Error sending email:", error);
+    }
+  });
+</script>
