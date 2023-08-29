@@ -1,0 +1,14 @@
+---
+export interface Props {
+    phone: string
+}
+
+const { phone } = Astro.props;
+---
+<button
+    class="fixed w-[56px] h-[56px] rounded-full border mb-0 z-[997] bottom-[45px] right-[24px] bg-[#00e676] text-white hover:bg-[#00a884] hover:shadow-lg transition-all"
+>
+    <a href={`https://api.whatsapp.com/send?phone=52${phone}`} target="_blank">
+        <span class="text-3xl mdi mdi-whatsapp"></span>
+    </a>
+</button>
