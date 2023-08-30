@@ -37,40 +37,40 @@ export default function MySwiper() {
             }
         >
             <SwiperSlide>
-                <img className='aspect-[120/120] object-contain max-w-[120px] m-auto p-5' src='../images/about/swiper/brand1.webp' alt='oxxo' />
+                <img width={120} height={120} className='aspect-[120/120] object-contain max-w-[120px] m-auto p-5' src='../images/about/swiper/brand1.webp' alt='oxxo' />
             </SwiperSlide>
             <SwiperSlide>
-                <img className='aspect-[120/120] object-contain max-w-[120px] m-auto' src='../images/about/swiper/brand2.webp' alt='calimax' />
+                <img width={120} height={120} className='aspect-[120/120] object-contain max-w-[120px] m-auto' src='../images/about/swiper/brand2.webp' alt='calimax' />
             </SwiperSlide>
             <SwiperSlide>
-                <img className='aspect-[120/120] object-contain max-w-[120px] m-auto' src='../images/about/swiper/brand3.webp' alt='alsuper' />
+                <img width={120} height={120} className='aspect-[120/120] object-contain max-w-[120px] m-auto' src='../images/about/swiper/brand3.webp' alt='alsuper' />
             </SwiperSlide>
             <SwiperSlide>
-                <img className='aspect-[120/120] object-contain max-w-[120px] m-auto' src='../images/about/swiper/brand4.webp' alt='lacomer' />
+                <img width={120} height={120} className='aspect-[120/120] object-contain max-w-[120px] m-auto' src='../images/about/swiper/brand4.webp' alt='lacomer' />
             </SwiperSlide>
             <SwiperSlide>
-                <img className='aspect-[120/120] object-contain max-w-[120px] m-auto' src='../images/about/swiper/brand5.webp' alt='shell' />
+                <img width={120} height={120} className='aspect-[120/120] object-contain max-w-[120px] m-auto' src='../images/about/swiper/brand5.webp' alt='shell' />
             </SwiperSlide>
             <SwiperSlide>
-                <img className='aspect-[120/120] object-contain max-w-[120px] m-auto p-8 ' src='../images/about/swiper/brand6.webp' alt='superq' />
+                <img width={120} height={120} className='aspect-[120/120] object-contain max-w-[120px] m-auto p-8 ' src='../images/about/swiper/brand6.webp' alt='superq' />
             </SwiperSlide>
             <SwiperSlide>
-                <img className='aspect-[120/120] object-contain max-w-[120px] m-auto' src='../images/about/swiper/brand7.webp' alt='aki' />
+                <img width={120} height={120} className='aspect-[120/120] object-contain max-w-[120px] m-auto' src='../images/about/swiper/brand7.webp' alt='aki' />
             </SwiperSlide>
             <SwiperSlide>
-                <img className='aspect-[120/120] object-contain max-w-[120px] m-auto' src='../images/about/swiper/brand8.webp' alt='woolworth' />
+                <img width={120} height={120} className='aspect-[120/120] object-contain max-w-[120px] m-auto' src='../images/about/swiper/brand8.webp' alt='woolworth' />
             </SwiperSlide>
             <SwiperSlide>
-                <img className='aspect-[120/120] object-contain max-w-[120px] m-auto' src='../images/about/swiper/brand9.webp' alt='kiosko' />
+                <img width={120} height={120} className='aspect-[120/120] object-contain max-w-[120px] m-auto' src='../images/about/swiper/brand9.webp' alt='kiosko' />
             </SwiperSlide>
             <SwiperSlide>
-                <img className='aspect-[120/120] object-contain max-w-[120px] m-auto' src='../images/about/swiper/brand10.webp' alt='gomart' />
+                <img width={120} height={120} className='aspect-[120/120] object-contain max-w-[120px] m-auto' src='../images/about/swiper/brand10.webp' alt='gomart' />
             </SwiperSlide>
             <SwiperSlide>
-                <img className='aspect-[120/120] object-contain max-w-[120px] m-auto p-8' src='../images/about/swiper/brand11.webp' alt='amazon' />
+                <img width={120} height={120} className='aspect-[120/120] object-contain max-w-[120px] m-auto p-8' src='../images/about/swiper/brand11.webp' alt='amazon' />
             </SwiperSlide>
             <SwiperSlide>
-                <img className='aspect-[120/120] object-contain max-w-[120px] m-auto' src='../images/about/swiper/brand12.webp' alt='7eleven' />
+                <img width={120} height={120} className='aspect-[120/120] object-contain max-w-[120px] m-auto' src='../images/about/swiper/brand12.webp' alt='7eleven' />
             </SwiperSlide>
         </Swiper>
     );
