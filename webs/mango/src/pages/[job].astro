@@ -51,7 +51,9 @@ const CARD_JOB_DESCRIPTION = [
 
 <Layout title={`Jobs | ${info.id}`}>
   <Container>
-    <div class="relative grid md:grid-cols-12 grid-cols-1 gap-[30px] top-32 pb-32">
+    <div
+      class="relative grid md:grid-cols-12 grid-cols-1 gap-[30px] top-32 pb-32"
+    >
       <div class="sm:col-span-12 sm:sticky sm:top-32">
         <a
           class="font-bold float-left shadow-slate-50 w-fit rounded-[10px] h-10 bg-primary p-2 hover:bg-slate-400"
@@ -123,6 +125,20 @@ const CARD_JOB_DESCRIPTION = [
           }
         </ul>
 
+
+        <h5 class="text-xl font-semibold mt-6 dark:text-white">¿Deseas aplicar a la vacante?</h5>
+        <p class="mt-2 dark:text-gray-300">
+          Mandanos tu CV al correo <a
+            class=" text-lg font-bold underline dark:text-white"
+            href="mailto:rh@mangobc.com"
+          >
+            rh@mangobc.com
+          </a>
+          con el asunto: 
+        </p>
+        <p class="font-bold mt-2 dark:text-gray-300">
+          "VACANTE PARA {info.position}".
+        </p>
         <!-- 
           BOTON PARA APLICAR REDIRIGIR A CONTACTO
           <div class="mt-5">
