@@ -4,6 +4,7 @@ import Container from "../components/Container.astro";
 import Divider from "../components/Divider.astro";
 import { estados } from "../data/estados.js";
 import WhatsappButton from "../components/WhatsappButton.astro";
+import FormMkt from "../components/FormMkt.astro";
 
 const marcas = [
   {
@@ -105,7 +106,13 @@ const marcas = [
           </div>
         </div>
         <div class="inline-flex items-center gap-1">
-          <img width="28" height="28" class="w-7" src="../images/flecha.webp" alt="flecha" />
+          <img
+            width="28"
+            height="28"
+            class="w-7"
+            src="../images/flecha.webp"
+            alt="flecha"
+          />
           <p class="text-xl font-bold dark:text-white">
             Descarga el catálogo con todos nuestros productos
           </p>
@@ -259,15 +266,16 @@ const marcas = [
         </h3>
         <h3 class="mb-4 text-2xl font-bold dark:text-white">
           Correo:<br />
-          <a
-            class="underline text-xl"
-            href="mailto:contacto@mangobc.com"
-          >
+          <a class="underline text-xl" href="mailto:contacto@mangobc.com">
             contacto@mangobc.com
           </a>
         </h3>
       </div>
     </div>
+    <h3 class="mb-10 text-3xl font-bold dark:text-white">
+      Necesitas mas información. Contáctanos
+    </h3>
+    <FormMkt />
   </Container>
   <Divider />
   <WhatsappButton phone="4432312740" />
