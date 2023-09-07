@@ -1,12 +1,13 @@
 .swiper {
     width: 100%;
     height: 100%;
+    background-color: transparent;
 }
 
 .swiper-slide {
     text-align: center;
     font-size: 18px;
-    background: #fff;
+    background: transparent;
     background-size: cover;
     background-position: center;
 
