@@ -1,0 +1,28 @@
+{
+    "home": {
+        "cards": {
+            "card1": {
+                "body": "Aprenda cómo funciona Astro y explore los documentos oficiales de APIsssssssss.",
+                "title": "Documentación"
+            },
+            "card2": {
+                "body": "Potencia tu proyecto con nuevos marcos y bibliotecas.",
+                "title": "Integraciones"
+            },
+            "card3": {
+                "body": "Explora una galaxia de temas iniciales creados por la comunidad.",
+                "title": "Temas"
+            },
+            "card4": {
+                "body": "Ven a saludar a nuestra increíble comunidad de Discord. ❤️",
+                "title": "Comunidad"
+            }
+        },
+        "subtitle": "This is a <0>more complex</0> string to translate, mixed with <1>html elements</1>, such as a <2>a cool link</2>!",
+        "title": "Bienvenido a Astro"
+    },
+    "site": {
+        "description": "Here is the description of my awesome website!",
+        "title": "My awesome website!"
+    }
+}

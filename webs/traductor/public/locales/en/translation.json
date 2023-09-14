@@ -1,0 +1,28 @@
+{
+    "home": {
+        "cards": {
+            "card1": {
+                "body": "Learn how Astro works and explore the official API docs.",
+                "title": "Documentation"
+            },
+            "card2": {
+                "body": "Supercharge your project with new frameworks and libraries.",
+                "title": "Integrations"
+            },
+            "card3": {
+                "body": "Explore a galaxy of community-built starter themes.",
+                "title": "Themes"
+            },
+            "card4": {
+                "body": "Come say hi to our amazing Discord community. ❤️",
+                "title": "Community"
+            }
+        },
+        "subtitle": "This is a <0>more complex</0> string to translate, mixed with <1>html elements</1>, such as a <2>a cool link</2>!",
+        "title": "Welcome to Astro."
+    },
+    "site": {
+        "description": "Here is the description of my awesome website!",
+        "title": "My awesome website!"
+    }
+}
