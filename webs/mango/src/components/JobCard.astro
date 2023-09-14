@@ -10,9 +10,9 @@ const { id, position, depto, desc } = Astro.props;
 ---
 
 <div
-	class="grid grid-rows-2 p-6 rounded-lg border-4 border-primary bg-white hover:shadow-xl dark:bg-slate-200 dark:hover:shadow-gray-700 transition-all duration-500"
+	class="grid p-6 rounded-lg border-4 border-primary bg-white hover:shadow-xl dark:bg-slate-200 dark:hover:shadow-gray-700 transition-all duration-500"
 >
-	<div class="article ga mt-3">
+	<div class="grid gap-3 mt-3">
 		<div class="flex justify-between items-start">
 			<div>
 				<div class="w-14 h-14 flex items-center justify-center rounded-full mb-2">
@@ -123,12 +123,3 @@ const { id, position, depto, desc } = Astro.props;
 		</div>
 	</div>
 </div>
-
-<style>
-	.article {
-    gap: 0.75rem;
-		grid-row: span 4;
-		display: grid;
-		grid-template-rows: subgrid;
-	}
-</style>
