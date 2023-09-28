@@ -10,7 +10,7 @@ import ProductBase from '../ProductBase.astro';
 const marcas = [
     {
         id: 0,
-        title: 'delibarras',
+        title: 'yummy bars',
         href: 'delibarras',
         img: 'images/marcas/logo_deli.webp',
         img2: 'images/marcas/menu_deli.webp',
@@ -47,15 +47,15 @@ const marcas = [
     <!-- Section AboutUs -->
     <div class="grid grid-cols-1 gap-6 md:grid-cols-2 mt-10 animate-fade-up">
         <div class="flex flex-col gap-8 px-8 justify-center">
-            <Title body="Haz negocio con nosotros y distribuye productos Mango." />
+            <Title body="Do business us and enjoy our product." />
             <Paragraph
-                body="Estás buscando iniciar un negocio o incrementar los productos en tu red de distribución. Tenemos una variedad de productos para la venta al detalle."
+                body="You are looking to start a business or increase products in your distribution network. We have a variety of products for retail sale."
             />
             <div class="flex justify-center">
                 <PulseButton
                     href="download/mango_cliente.pdf"
                     width="md:w-3/4"
-                    body="ver catalogo"
+                    body="See catalog"
                 />
             </div>
         </div>
@@ -71,7 +71,7 @@ const marcas = [
 
     <!-- Section BrandIconsCircle -->
     <div class="mt-10">
-        <Title styles="text-center uppercase mt-10" body="nuestras marcas" />
+        <Title styles="text-center uppercase mt-10" body="OUR BRANDS" />
         <div class="grid grid-cols-1 md:grid-cols-4 justify-center gap-3 items-center mt-10">
             {
                 marcas.map((marca) => (

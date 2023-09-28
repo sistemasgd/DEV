@@ -1,13 +1,13 @@
 export const brands = [
     {
         // contenedor
-        title: 'Deli Barras',
-        body: 'Barra de harina integral con granola y rellena de fruta.',
+        title: 'Yummy bars',
+        body: 'Brown flour bar with granola and filled with fruit.',
         list:
             [
-                'Zonas con exclusividad disponibles.',
-                'Inversión inicial a partir de $800.',
-                'Más de 4 productos listos para distribuir.',
+                'Exclusive zones available.',
+                'Initial investment starting from $800.',
+                'More than 4 products ready to distribute.',
             ],
         align_list: '',
         listbg: '[#545DF5]',
@@ -27,12 +27,12 @@ export const brands = [
     {
         // contenedor
         title: 'Nanná Postrero',
-        body: 'Galletería y Postres.',
+        body: 'Biscuits and Desserts.',
         list:
             [
-                'Zonas con exclusividad disponibles.',
-                'Inversión inicial a partir de $800.',
-                'Más de 4 productos listos para distribuir.',
+                'Exclusive zones available.',
+                'Initial investment starting from $800.',
+                'More than 4 products ready to distribute.',
             ],
         align_list: 'md:text-right',
         listbg: '[#FF71AF]',
@@ -52,12 +52,12 @@ export const brands = [
     {
         // contenedor
         title: 'Sabor Mío',
-        body: 'Empanizadores y condimentos.',
+        body: 'Breadmakers and seasonings.',
         list:
             [
-                'Zonas con exclusividad disponibles.',
-                'Inversión inicial a partir de $3,762.',
-                'Más de 10 sabores de empanizador.',
+                'Exclusive zones available.',
+                'Initial investment starting from $3,762.',
+                'More than 10 flavors of breadmaker.',
             ],
         align_list: '',
         listbg: '[#8953F6]',

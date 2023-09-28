@@ -9,7 +9,7 @@ import FormMkt from "../components/FormMkt.astro";
 const marcas = [
   {
     id: 0,
-    title: "DELIBARRAS",
+    title: "YUMMY BARS",
   },
   {
     id: 1,
@@ -38,8 +38,8 @@ const marcas = [
           <h4
             class="text-4xl md:text-5xl text-white animate-fade-right animate-duration-1000"
           >
-            Conviértete en <span class="font-bold">socio distribuidor</span> y haz
-            negocio con nosotros.
+            Become a <span class="font-bold">Distributor partner </span>and do
+            business with us.
           </h4>
         </div>
       </div>
@@ -58,7 +58,7 @@ const marcas = [
         />
       </div>
       <h3 class="mb-4 text-3xl font-bold dark:text-white">
-        Nuestros<br />productos:
+        Our<br />products:
       </h3>
       <div class="flex flex-col items-center gap-12">
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-4">
@@ -70,10 +70,9 @@ const marcas = [
               src="../images/distribucion/deli.webp"
               alt="delibarras"
             />
-            <h4 class="text-2xl font-bold">Deli Barras</h4>
+            <h4 class="text-2xl font-bold">Yummy Bars</h4>
             <p class="font-semibold text-center p-4">
-              Una auténtica delicia. Disponible en sus 3 líneas, tradicional,
-              mini y yogurt.
+              An authentic delight. Available in its 3 lines, traditional, mini and yogurt
             </p>
           </div>
           <div
@@ -86,8 +85,7 @@ const marcas = [
             />
             <h4 class="text-2xl font-bold">Sabor Mio</h4>
             <p class="font-semibold text-center p-4">
-              Nuestra línea de empanizadores. No requieren huevo ni otros
-              condimentos, son súper crunchy y rinden mucho más.
+              Our breading line, doesn't need eggs or  other condiments, they are really crunchy and are long-lasting.
             </p>
           </div>
           <div
@@ -100,8 +98,7 @@ const marcas = [
             />
             <h4 class="text-2xl font-bold">Nanná postrero</h4>
             <p class="font-semibold text-center p-4">
-              Deliciosa galletería fina. Productos elaborados con especial
-              atención a los detalles.
+              Delicious fine cookies. Products made with special attention to detail.
             </p>
           </div>
         </div>
@@ -114,14 +111,14 @@ const marcas = [
             alt="flecha"
           />
           <p class="text-xl font-bold dark:text-white">
-            Descarga el catálogo con todos nuestros productos
+           Download the catalogue with all our products.
           </p>
           <a
             href="../download/mango_catalogo.pdf"
             rel="noreferrer"
             target="_blank"
             class="flex justify-center items-center font-bold shadow-slate-50 w-full md:w-1/2 rounded-[100px] h-10 bg-primary hover:bg-slate-400"
-            >Ver catálogo</a
+            >See catalog</a
           >
         </div>
       </div>
@@ -129,7 +126,7 @@ const marcas = [
 
     <section class="my-20">
       <h3 class="mb-10 text-3xl font-bold dark:text-white">
-        ¿Por qué distribuir con nosotros?
+        Why distribute with us?
       </h3>
       <div class="grid grid-cols-1 md:grid-cols-4 gap-4 mb-4">
         <div class="flex flex-col justify-center items-center gap-4">
@@ -139,7 +136,7 @@ const marcas = [
             alt="consumo"
           />
           <p class="font-semibold text-center dark:text-white">
-            Productos de consumo masivo.
+            Mass consumption products.
           </p>
         </div>
         <div class="flex flex-col justify-center items-center gap-4">
@@ -149,7 +146,7 @@ const marcas = [
             alt="ganancia"
           />
           <p class="font-semibold text-center dark:text-white">
-            Excelentes márgenes de ganancia.
+            Excellent profit margins.
           </p>
         </div>
         <div class="flex flex-col justify-center items-center gap-4">
@@ -159,7 +156,7 @@ const marcas = [
             alt="exclusividad"
           />
           <p class="font-semibold text-center dark:text-white">
-            Zonas disponibles con exclusividad.
+            Areas with exclusivity.
           </p>
         </div>
         <div class="flex flex-col justify-center items-center gap-4">
@@ -169,7 +166,7 @@ const marcas = [
             alt="beneficios"
           />
           <p class="font-semibold text-center dark:text-white">
-            Beneficios exclusivos para distribuidores.
+            Exclusive benefits for distributors.
           </p>
         </div>
       </div>
@@ -181,12 +178,12 @@ const marcas = [
       <div class="flex flex-col gap-6">
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
           <h3 class="mb-4 text-xl font-bold">
-            Consulta aquí si tu territorio está disponible para distribución.
+           Check here to see if your territory is available for distribution.
           </h3>
         </div>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
           <div>
-            <label for="marca" class="block font-bold mb-2"> Marca:</label>
+            <label for="marca" class="block font-bold mb-2"> Brand:</label>
             <select
               id="marca"
               name="marca"
@@ -196,7 +193,7 @@ const marcas = [
             </select>
           </div>
           <div>
-            <label for="estado" class="block font-bold mb-2"> Estado:</label>
+            <label for="estado" class="block font-bold mb-2"> State:</label>
             <select
               id="estado"
               name="estado"
@@ -213,19 +210,19 @@ const marcas = [
           </div>
           <div class="flex flex-col justify-end md:items-center">
             <p class="text-lg font-bold">
-              Zonas disponibles:<br />
+              Available areas: <br />
               <span id="zonas"></span>
             </p>
           </div>
         </div>
         <div class="grid grid-cols-1 gap-4 items-center">
           <h3 class="text-lg font-semibold">
-            ¿Necesitas una cotización para distribución?
+            Do you need a quote for distribution?
           </h3>
           <a
             href="/contact"
             class="flex justify-center items-center font-bold text-white shadow-slate-50 w-full md:w-1/5 rounded-[100px] h-10 bg-black hover:bg-slate-400"
-            >Cotizar</a
+            >Quote</a
           >
         </div>
       </div>
@@ -255,17 +252,17 @@ const marcas = [
         />
       </div>
       <h3 class="mb-4 text-2xl font-bold text-center dark:text-white">
-        Contacto
+        Contact
       </h3>
       <div class="grid grid-cols-1 md:grid-cols-2 text-center">
         <h3 class="mb-4 text-2xl font-bold dark:text-white">
-          Teléfono: <br />
+          Phone: <br />
           <a class="underline text-xl" href="tel:+527751089614">
             775-108-9614
           </a>
         </h3>
         <h3 class="mb-4 text-2xl font-bold dark:text-white">
-          Correo:<br />
+          Email:<br />
           <a class="underline text-xl" href="mailto:contacto@mangobc.com">
             contacto@mangobc.com
           </a>
@@ -273,7 +270,7 @@ const marcas = [
       </div>
     </div>
     <h3 class="mb-10 text-3xl font-bold dark:text-white">
-      Necesitas mas información. Contáctanos
+      You want more information, we will contact you
     </h3>
     <FormMkt />
   </Container>

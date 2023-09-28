@@ -1,8 +1,8 @@
 export const prods = [
     {
         id: 1,
-        title: "Pan molido natural",
-        desc: "Producto que resulta de hornear una masa elaborada con harina, azúcar, sal y levadura; que es posteriormente tostado y molido.",
+        title: "Breader",
+        desc: "Product resulting from baking a dough made with flour, sugar, salt and yeast which is then roasted and ground.",
         display: [
             "210 g",
             "1 kg",
@@ -13,8 +13,8 @@ export const prods = [
     },
     {
         id: 2,
-        title: "Empanizador libre de gluten",
-        desc: "Producto obtenido a partir de granos de maíz descascarados y desgerminados que han sido sometidos a procesos de cocción, secado, laminado (extruido), horneado y molido.",
+        title: "Gluten free breader",
+        desc: "Product obtained from peeled and degerminated maize kernels that have undergone cooking, drying, rolling (extruded), baking and grinding processes.",
         display: [
             "175 g",
             "1 kg",
@@ -26,7 +26,7 @@ export const prods = [
     {
         id: 3,
         title: "Batter",
-        desc: "Mezcla de harinas condimentadas para reestructurar.",
+        desc: "Mixture of seasoned flours to restructure.",
         display: [
             "1 kg",
             "8 kg",
@@ -35,14 +35,14 @@ export const prods = [
     },
     {
         id: 4,
-        title: "Harinas",
+        title: "Flours",
         desc: "",
         display: [],
         file: ""
     },
     {
         id: 5,
-        title: "Ingredientes",
+        title: "Ingredients",
         desc: "",
         display: [],
         file: ""
@@ -50,7 +50,7 @@ export const prods = [
     {
         id: 6,
         title: "Panko",
-        desc: "Producto que resulta de hornear una masa elaborada con harina, azúcar, sal y levadura; que es posteriormente secado y granulado.",
+        desc: "Product that results from baking a dough made with flour, sugar, salt and yeast; which is then dried and granulated.",
         display: [
             "1 kg",
             "10 kg",
@@ -59,8 +59,8 @@ export const prods = [
     },
     {
         id: 7,
-        title: "Empanizador condimentado",
-        desc: "Producto que resulta de hornear una masa elaborada con harina, azúcar, sal y levadura; que es posteriormente tostado, granulado y mezclado con hojuela de maíz granulada y condimentos.",
+        title: "Seasoned Breader",
+        desc: "Product that results from baking a dough made with flour, sugar, salt and yeast; which is subsequently roasted, granulated and mixed with granulated corn flakes and seasonings.",
         display: [
             "170 g",
         ],
@@ -69,7 +69,7 @@ export const prods = [
     {
         id: 8,
         title: "Tempura",
-        desc: "Mezcla de harinas condimentadas para preparar un tempura.",
+        desc: "Mix of seasoned flours to prepare a tempura.",
         display: [
             "1 kg",
             "8 kg",
@@ -79,14 +79,14 @@ export const prods = [
     },
     {
         id: 9,
-        title: "Semillas",
+        title: "Seeds",
         desc: "",
         display: [],
         file: ""
     },
     {
         id: 10,
-        title: "Otros",
+        title: "Others",
         desc: "",
         display: [],
         file: ""

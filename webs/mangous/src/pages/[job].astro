@@ -23,27 +23,27 @@ if (!info) {
 const CARD_JOB_DESCRIPTION = [
   {
     component: Icons.employeeType,
-    title: "Tipo de Empleo:",
-    desc: "Tiempo completo",
+    title: "Employee Type:",
+    desc: "Full Time",
   },
   {
     component: Icons.location,
-    title: "Ubicación:",
+    title: "Location:",
     desc: "Morelia, Mich.",
   },
   {
     component: Icons.jobType,
-    title: "Puesto:",
+    title: "Job Type:",
     desc: info.position,
   },
   {
     component: Icons.experience,
-    title: "Experiencia:",
+    title: "Experience:",
     desc: info.experienceTime,
   },
   {
     component: Icons.salary,
-    title: "Salario:",
+    title: "Salary:",
     desc: "Según experiencia",
   },
 ];
@@ -59,7 +59,7 @@ const CARD_JOB_DESCRIPTION = [
           class="font-bold float-left shadow-slate-50 w-fit rounded-[10px] h-10 bg-primary p-2 hover:bg-slate-400"
           href="/jobs#vacancies"
         >
-          <span class="mdi mdi-arrow-left"></span>Regresar
+          <span class="mdi mdi-arrow-left"></span>Back
         </a>
       </div>
       <div class="lg:col-span-4 md:col-span-6">
@@ -68,7 +68,7 @@ const CARD_JOB_DESCRIPTION = [
         >
           <div class="p-6">
             <h5 class="text-xl font-semibold dark:text-white">
-              Información de la vacante
+              Job Information
             </h5>
           </div>
           <div class="p-6 border-t border-slate-100 dark:border-t-gray-700">
@@ -95,12 +95,12 @@ const CARD_JOB_DESCRIPTION = [
 
       <div class="lg:col-span-8 md:col-span-6">
         <h5 class="text-xl font-semibold mt-6 dark:text-white">
-          Descripción de Trabajo:
+          Job Description:
         </h5>
         <Paragraph styles="mt-4" body={info.desc} />
 
         <h5 class="text-xl font-semibold mt-6 dark:text-white">
-          Responsabilidades / Obligaciones:
+          Responsibilities and Duties:
         </h5>
         <ul class="list-none">
           {
@@ -113,7 +113,7 @@ const CARD_JOB_DESCRIPTION = [
         </ul>
 
         <h5 class="text-xl font-semibold mt-6 dark:text-white">
-          Destrezas / Competencias:
+          Skills and Qualifications:
         </h5>
         <ul class="list-none">
           {
@@ -126,18 +126,18 @@ const CARD_JOB_DESCRIPTION = [
         </ul>
 
 
-        <h5 class="text-xl font-semibold mt-6 dark:text-white">¿Deseas aplicar a la vacante?</h5>
+        <h5 class="text-xl font-semibold mt-6 dark:text-white">You want to apply for a job?</h5>
         <p class="mt-2 dark:text-gray-300">
-          Mandanos tu CV al correo <a
+          Send your curriculum vitae to <a
             class=" text-lg font-bold underline dark:text-white"
             href="mailto:rh@mangobc.com"
           >
             rh@mangobc.com
           </a>
-          con el asunto: 
+          with the subject: 
         </p>
         <p class="font-bold mt-2 dark:text-gray-300">
-          "VACANTE PARA {info.position}".
+          "VACANCIE FOR {info.position}".
         </p>
         <!-- 
           BOTON PARA APLICAR REDIRIGIR A CONTACTO
