@@ -1,0 +1,148 @@
+---
+---
+<form id="contact-form" class="grid grid-cols-1 md:grid-cols-2 gap-6">
+  <div class="mb-4 col-span-2 md:col-span-1">
+    <label for="name" class="block font-bold mb-2 dark:text-white">
+      Nombre:</label
+    >
+    <input
+      type="text"
+      id="name"
+      name="name"
+      class="shadow appearance-none border rounded w-full py-2 px-3 leading-tight focus:outline-primary focus:shadow-outline"
+    />
+  </div>
+  <div class="mb-4 col-span-2 md:col-span-1">
+    <label for="email" class="block font-bold mb-2 dark:text-white">
+      Email:</label
+    >
+    <input
+      type="email"
+      id="email"
+      name="email"
+      class="shadow appearance-none border rounded w-full py-2 px-3 leading-tight focus:outline-primary focus:shadow-outline"
+    />
+  </div>
+  <div class="mb-4 col-span-2 md:col-span-1">
+    <label for="phone" class="block font-bold mb-2 dark:text-white">
+      Teléfono:</label
+    >
+    <input
+      type="text"
+      id="phone"
+      name="phone"
+      class="shadow appearance-none border rounded w-full py-2 px-3 leading-tight focus:outline-primary focus:shadow-outline"
+    />
+  </div>
+  <div class="relative inline-block w-full mb-6 col-span-2 md:col-span-1">
+    <label for="service" class="block font-bold mb-2 dark:text-white">
+      Servicio:</label
+    >
+    <select
+      id="service"
+      name="service"
+      class="shadow appearance-none border rounded w-full py-2 px-3 leading-tight focus:outline-primary focus:shadow-outline"
+    >
+      <option>Maquila</option>
+      <option>Marcas Blancas</option>
+      <option>Distribución de productos</option>
+      <option>Línea institucional</option>
+    </select>
+  </div>
+
+  <div class="mb-6 col-span-2">
+    <label for="message" class="block font-bold mb-2 dark:text-white">
+      Mensaje:</label
+    >
+    <textarea
+      id="message"
+      name="message"
+      rows={5}
+      class="shadow appearance-none border rounded w-full py-2 px-3 leading-tight focus:outline-primary focus:shadow-outline"
+    ></textarea>
+  </div>
+  <div class="col-span-2">
+    <button
+      type="submit"
+      class="btn_pulse md:w-3/4 text-center w-full uppercase"
+    >
+      enviar
+    </button>
+  </div>
+</form>
+
+<style>
+  .btn_pulse {
+    /* width: 100%; */
+    border-radius: 100px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #facb22 !important;
+    font-weight: bold;
+    box-shadow: 0 0 0 0 #facb22;
+    transform: scale(1);
+    animation: pulse2 2s infinite;
+  }
+
+  @keyframes pulse2 {
+    0% {
+      transform: scale(0.95);
+      box-shadow: 0 0 0 0 #facb22;
+    }
+
+    70% {
+      transform: scale(1);
+      box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+    }
+
+    100% {
+      transform: scale(0.95);
+      box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    }
+  }
+</style>
+
+<script>
+  import emailjs from "@emailjs/browser";
+  import { KEY } from "../data/email.js";
+  import Swal from "sweetalert2";
+
+  const form = document.querySelector("#contact-form");
+  form.addEventListener("submit", async (event) => {
+    event.preventDefault();
+
+    const formData = new FormData(form as HTMLFormElement);
+
+    try {
+      await emailjs.send(
+        KEY.SERVICE_ID,
+        KEY.TEMPLATE_ID,
+        {
+          name: formData.get("name"),
+          message: formData.get("message"),
+          phone: formData.get("phone"),
+          service: formData.get("service"),
+          email: formData.get("email"),
+        },
+        KEY.USER_ID
+      );
+
+      Swal.fire({
+        title: "Exito!",
+        text: "Correo enviado",
+        icon: "success",
+        confirmButtonText: "ok",
+      }).then((result) => {
+        if (result) {
+          (form as HTMLFormElement).reset();
+        }
+      });
+
+      console.log("Email sent successfully");
+    } catch (error) {
+      console.error("Error sending email:", error);
+    }
+  });
+</script>

@@ -1,0 +1,52 @@
+---
+import Container from '../Container.astro';
+import Divider from '../Divider.astro';
+import PulseButton from '../PulseButton.astro';
+import Title from '../Title.astro';
+import Paragraph from '../Paragraph.astro';
+import ProductBase from '../ProductBase.astro';
+---
+
+<Container>
+    <div class="flex flex-col gap-20 mt-10">
+        <Title styles="text-center" body="Conoce nuestra Línea Institucional" />
+        <Paragraph
+            styles="tracking-tight"
+            body="Nuestra línea institucional cuenta con sistemas de cobertura para mejor eficiencia en el sector food service mejorando los rendimientos y haciendo más rentable tu negocio."
+        />
+        <div class="grid grid-cols-1 md:grid-cols-3 xl:grid-cols-3 gap-6">
+            <div class="flex flex-col flex-wrap gap-3 justify-center items-center">
+                <ProductBase
+                    src="images/productos/inst1.webp"
+                    alt="empanizador"
+                    product_class="aspect-[351/500] object-cover max-w-[130px] xl:max-w-[150px] mx-auto hover:scale-110 transition-all duration-200 ease-out hover:ease-in"
+                    base_class="aspect-[1496/327] object-cover max-w-[200px] xl:max-w-[250px] mx-auto"
+                />
+            </div>
+            <div class="flex flex-col flex-wrap gap-3 justify-center items-center">
+                <ProductBase
+                    src="images/productos/inst1.webp"
+                    alt="empanizador"
+                    product_class="aspect-[351/500] object-cover max-w-[130px] xl:max-w-[150px] mx-auto hover:scale-110 transition-all duration-200 ease-out hover:ease-in"
+                    base_class="aspect-[1496/327] object-cover max-w-[200px] xl:max-w-[250px] mx-auto"
+                />
+            </div>
+            <div class="flex flex-col flex-wrap gap-3 justify-center items-center">
+                <ProductBase
+                    src="images/productos/inst1.webp"
+                    alt="empanizador"
+                    product_class="aspect-[351/500] object-cover max-w-[130px] xl:max-w-[150px] mx-auto hover:scale-110 transition-all duration-200 ease-out hover:ease-in"
+                    base_class="aspect-[1496/327] object-cover max-w-[200px] xl:max-w-[250px] mx-auto"
+                />
+            </div>
+        </div>
+        <Title body="Sabor Mío Institucional" />
+        <Paragraph
+            body="Tenemos la mejor calidad de insumos e ingredientes para tu negocio. Pregunta por los precios especiales que tenemos para el sector food service, déjanos tus datos si necesitas más información o estás interesados en trabajar con nosotros."
+        />
+        <div class="flex justify-center">
+            <PulseButton href="#" width="md:w-1/3" body="ver catálogo" />
+        </div>
+    </div>
+    <Divider />
+</Container>

@@ -1,0 +1,24 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Container from "../components/Container.astro";
+import ImgContact from "../components/ImgContact.astro";
+import FormContact from "../components/FormContact.astro";
+import Title from "../components/Title.astro";
+---
+
+<Layout title="Contact | MangoBC">
+  <Container>
+    <div class="relative grid grid-cols-1 md:grid-cols-2 md:top-32">
+      <div class="flex justify-center animate-fade-right animate-duration-1000">
+        <ImgContact />
+      </div>
+      <div class="animate-fade-down animate-duration-1000">
+        <Title
+          styles="mb-10 text-left break-words"
+          body=" Quieres más información, nos ponemos en contacto contigo."
+        />
+        <FormContact />
+      </div>
+    </div>
+  </Container>
+</Layout>

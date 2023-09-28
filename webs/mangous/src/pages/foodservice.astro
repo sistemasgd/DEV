@@ -1,0 +1,131 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Container from "../components/Container.astro";
+import Divider from "../components/Divider.astro";
+import FormContact from "../components/FormContact.astro";
+import Modal from "../components/Modal.astro";
+import { prods } from "../data/foodservice_prods.js";
+import WhatsappButton from "../components/WhatsappButton.astro";
+---
+
+<Layout title="Food Service | MangoBC">
+  <section
+    class="flex items-center justify-center h-screen mb-12 md:bg-fixed bg-center bg-cover bg-[url('../images/foodservice/frascos.webp')]"
+  >
+    <Container>
+      <div class="z-1">
+        <div
+          class="flex flex-col mt-10 bg-white bg-opacity-70 shadow-lg p-10 rounded-lg dark:bg-slate-600 dark:bg-opacity-70"
+        >
+          <h4
+            class="leading-normal text-2xl md:text-4xl lg:text-5xl mb-5 font-semibold animate-fade-right animate-duration-1000 dark:dark:text-white"
+          >
+            ¡Haz que tu <span class="text-primary">negocio</span>
+            <br />brille con <span class="font-bold">nuestros productos!</span>
+          </h4>
+          <p
+            class="text-slate-600 sm:text-lg md:text-2xl max-w-xl animate-fade-right animate-duration-1000 animate-delay-500 dark:dark:text-white"
+          >
+            Descubre cómo nuestra oferta de productos para la línea HORECA puede
+            potenciar tus experiencias culinarias y elevar tu negocio a un nuevo
+            nivel de satisfacción.
+          </p>
+        </div>
+      </div>
+    </Container>
+  </section>
+
+  <Container>
+    <section class="my-16">
+      <div
+        class="grid grid-cols-1 md:grid-cols-2 border-slate-400 rounded-lg shadow-lg p-10 gap-4 dark:bg-slate-200"
+      >
+        <p class="text-slate-600 text-xl lg:text-3xl">
+          Somos proveedores en
+          <span class="font-bold">Food Service</span>, atendiendo a comedores
+          industriales, plantas de procesamiento de alimentos y autoservicios
+          con soluciones de alta calidad.
+        </p>
+        <div class="m-auto">
+          <img width="240" height="240" src="../images/foodservice/casa.webp" alt="negocio" />
+        </div>
+      </div>
+    </section>
+
+    <section class="my-32">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 p-2">
+        <div class="flex flex-col justify-center gap-4">
+          <h3 class="mb-4 text-3xl font-bold dark:text-white">
+            Nuestros productos
+          </h3>
+          <p class="text-slate-600 text-lg dark:text-white">
+            Tenemos una amplia gama de productos diseñados especialmente para
+            hoteles, restaurantes, catering, comedores industriales, plantas de
+            procesamiento de alimentos y autoservicios.
+          </p>
+          <div class=" ">
+            <ul class="grid grid-cols-2 gap-4">            
+            {
+              prods.map((item) => (
+                    <li data-modal-target={`defaultModal${item.id}`} data-modal-toggle={`defaultModal${item.id}`} class="cursor-pointer hover:shadow-md bg-[#f9f3b2] rounded-lg p-4 border-slate-400 mb-3"><span class="mdi mdi-shaker-outline"> {item.title}</span></li>
+                    <Modal 
+                      id={item.id} 
+                      title={item.title}
+                      desc={item.desc}
+                      display={item.display}
+                      file={item.file}
+                    />
+                ))
+            }
+            </ul>
+          </div>
+        </div>
+        <div>
+          <div class="relative">
+            <div class="relative flex justify-center z-[1]">
+              <img
+                width="200"
+                height="300"
+                src="../images/foodservice/frasco.webp"
+                class="lg:w-[400px] w-[280px] shadow-xl rounded-xl border-8 border-white dark:shadow-gray-700"
+                alt="Frasco especias"
+              />
+            </div>
+            <div
+              class="absolute start-0 lg:-start-0 md:start-28 -bottom-16 z-[1]"
+            >
+              <img
+                width="200"
+                height="300"
+                src="../images/foodservice/empanizador.webp"
+                class="lg:w-[280px] w-[200px] shadow-xl rounded-xl border-8 border-white dark:shadow-gray-700"
+                alt="Empanizador"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="my-32">
+      <div class="flex flex-col justify-center gap-4 mb-10 p-2">
+        <h3
+          class="mb-4 md:leading-normal text-2xl md:text-4xl leading-normal font-bold dark:text-white"
+        >
+          ¡Contáctanos!
+        </h3>
+        <p class="text-slate-600 text-lg md:text-2xl dark:text-white">
+          Si deseas obtener más información acerca de nuestros productos o
+          requieres una solución personalizada acerca de nuestros productos o
+          requieres una solución personalizada, por favor comparte tus datos con
+          nosotros. Nuestro equipo estará encantado de atenderte.
+        </p>
+      </div>
+      <div class="md:px-10 lg:px-32">
+        <FormContact />
+      </div>
+    </section>
+    <Divider />
+  </Container>
+  <WhatsappButton phone="4431140048"/>
+</Layout>

@@ -1,0 +1,12 @@
+---
+export interface Props {
+    styles?: string;
+    body: string;
+}
+
+const { styles, body } = Astro.props;
+---
+
+<p class={`text-lg text-justify ${styles} dark:text-white`}>
+    {body}
+</p>

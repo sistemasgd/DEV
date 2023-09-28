@@ -1,0 +1,40 @@
+---
+import Container from "./Container.astro";
+---
+
+<div class="relative h-[500px] w-full bg-primary overflow-hidden" id="home">
+  <Container>
+    <div class="relative bottom-[-5rem] md:bottom-[-6.5rem] xl:bottom-[-4rem]">
+      <div id="boxes" class="flex items-center">
+        <div class="hidden md:block">
+          <img
+            class="relative aspect-[1214/509] object-contain max-w-full mx-auto bottom-[-4rem] animate-fade-right animate-duration-[2000ms]"
+            src="images/caja_izq.webp"
+            alt="caja_izq"
+          />
+        </div>
+        <div class="relative bottom-[-7rem]">
+          <div class="flex flex-col">
+            <img
+              class="flex aspect-[500/182] object-contain max-w-[80%] mx-auto animate-fade animate-duration-[2000ms] animate-delay-500"
+              src="images/logo_mango.webp"
+              alt="logo"
+            />
+            <img
+              class="flex aspect-[1649/419] object-contain max-w-full mx-auto"
+              src="images/base.webp"
+              alt="base"
+            />
+          </div>
+        </div>
+        <div class="hidden md:block">
+          <img
+            class="relative aspect-[1214/509] object-contain max-w-full mx-auto bottom-[-4rem] animate-fade-left animate-duration-[2000ms]"
+            src="images/caja_der.webp"
+            alt="caja_der"
+          />
+        </div>
+      </div>
+    </div>
+  </Container>
+</div>

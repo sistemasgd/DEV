@@ -1,0 +1,12 @@
+---
+export interface Props {
+    styles?: string;
+    body: string;
+}
+
+const { styles, body } = Astro.props;
+---
+
+<h2 class={`text-3xl font-bold ${styles} dark:text-white`}>
+    {body}
+</h2>
